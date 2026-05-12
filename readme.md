@@ -8,15 +8,6 @@ This repository provides a simple implementation of three token-level causal dri
 
 The main metric implementation is in `causal_drive_metrics.py`, and an example computation script is provided in `compute.py`.
 
-## Files
-
-```text
-.
-├── causal_drive_metrics.py   # Core implementation of QCD, VCD, and PCD
-├── compute.py                # Example script for model scoring and metric computation
-└── README.md
-```
-
 ## Metric Function
 
 The core function is:
@@ -105,7 +96,7 @@ The returned dictionary contains:
     "meta": {...},        # metadata
 }
 ```
-### MiraData Video Question Files
+## MiraData Video Question Files
 
 The question files are stored as `.txt` files. They contain the video-question pairs used for open-ended video QA evaluation on the MiraData dataset. Each line corresponds to one video and includes the relative path of the video in MiraData and its associated question.
 
@@ -123,3 +114,7 @@ question100-199.txt
 question200-299.txt
 question300-399.txt
 question400-499.txt
+
+## License
+
+This project is released under the MIT License.
