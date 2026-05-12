@@ -105,3 +105,21 @@ The returned dictionary contains:
     "meta": {...},        # metadata
 }
 ```
+### MiraData Video Question Files
+
+The question files are stored as `.txt` files. They contain the video-question pairs used for open-ended video QA evaluation on the MiraData dataset. Each line corresponds to one video and includes the relative path of the video in MiraData and its associated question.
+
+Each record consists of two fields:
+
+- `rel_path`: the relative path of the video in the MiraData dataset;
+- `question`: the open-ended question designed for the corresponding video.
+
+
+The files are organized as follows:
+
+```txt
+question0-99.txt
+question100-199.txt
+question200-299.txt
+question300-399.txt
+question400-499.txt
