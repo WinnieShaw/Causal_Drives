@@ -1,0 +1,1545 @@
+{
+  "status": "independent_cpu_reanalysis_of_two_completed_runs",
+  "models": {
+    "8B": {
+      "source_sha256": {
+        "shard_0.jsonl": "55c96a0a61fdeeccc183b8c1f4f6578c5677d40e002762ff6137398841445d51",
+        "shard_1.jsonl": "3082683d69b3a802ab84e359c202d51f3d28bd3ec84d6ad9d4222e92068daa67",
+        "shard_2.jsonl": "fa11bed6ea35bf84e6dc29fa23a64ef33127caaf50e202b77adc83dcaeadd7f4",
+        "shard_3.jsonl": "56480f3d40bf391e1fdd4d7a880fe69d0d13eda359cfab18133c0ff071f300aa",
+        "shard_4.jsonl": "ba13252fffa490dd9ec1c90f33ff370c09549dffde99a1721e9f23f1610f68a2",
+        "shard_5.jsonl": "2756e0ce62c4b4a8f262a495f815dee6ba0ccf0b4d9eccbf8ca9419d33c19c85",
+        "shard_6.jsonl": "6a373c536ae631cb62ffd26d3bc5bc3ed5ae3f269a4cb52475e3e242118b5750",
+        "shard_7.jsonl": "49a30a9c317ca25bb5478ee359989a22ad48cf7268f853f26caf31966f11b70d"
+      },
+      "prefix_conditions": {
+        "neutral": {
+          "answer_counts": {
+            "visual_answer_match": 40,
+            "cue_answer_match": 148,
+            "other": 22
+          },
+          "rates_pct": {
+            "visual_answer_match": 19.047619047619047,
+            "cue_answer_match": 70.47619047619048,
+            "other": 10.476190476190476
+          },
+          "mean_generated_tokens": 3.257142857142857,
+          "median_generated_tokens": 3.0,
+          "non_eos": 0,
+          "at_24_tokens": 0
+        },
+        "cue": {
+          "answer_counts": {
+            "visual_answer_match": 26,
+            "cue_answer_match": 175,
+            "other": 9
+          },
+          "rates_pct": {
+            "visual_answer_match": 12.380952380952381,
+            "cue_answer_match": 83.33333333333334,
+            "other": 4.285714285714286
+          },
+          "mean_generated_tokens": 4.919047619047619,
+          "median_generated_tokens": 4.0,
+          "non_eos": 0,
+          "at_24_tokens": 0
+        },
+        "visual": {
+          "answer_counts": {
+            "visual_answer_match": 67,
+            "cue_answer_match": 127,
+            "other": 16
+          },
+          "rates_pct": {
+            "visual_answer_match": 31.9047619047619,
+            "cue_answer_match": 60.476190476190474,
+            "other": 7.6190476190476195
+          },
+          "mean_generated_tokens": 5.885714285714286,
+          "median_generated_tokens": 6.0,
+          "non_eos": 8,
+          "at_24_tokens": 8
+        }
+      },
+      "prefix_paired_behavior": {
+        "cue_vs_neutral_cue_match": {
+          "name": "cue_vs_neutral_cue_match",
+          "before_count": 148,
+          "after_count": 175,
+          "adopted": 31,
+          "lost": 4,
+          "effect_pp": {
+            "n": 210,
+            "n_topics": 7,
+            "mean": 12.857142857142856,
+            "topic_cluster_ci95": [
+              0.0,
+              27.61904761904762
+            ],
+            "answer_iid_ci95_sensitivity": [
+              7.6190476190476195,
+              18.095238095238095
+            ],
+            "domains": {
+              "Animals": {
+                "n": 30,
+                "mean": 0.0
+              },
+              "Chess Pieces": {
+                "n": 30,
+                "mean": 13.333333333333334
+              },
+              "Flags": {
+                "n": 30,
+                "mean": 3.3333333333333335
+              },
+              "Game Boards": {
+                "n": 30,
+                "mean": -10.0
+              },
+              "Logos": {
+                "n": 30,
+                "mean": 3.3333333333333335
+              },
+              "Optical Illusion": {
+                "n": 30,
+                "mean": 33.33333333333333
+              },
+              "Patterned Grid": {
+                "n": 30,
+                "mean": 46.666666666666664
+              }
+            }
+          }
+        },
+        "visual_vs_neutral_visual_match": {
+          "name": "visual_vs_neutral_visual_match",
+          "before_count": 40,
+          "after_count": 67,
+          "adopted": 29,
+          "lost": 2,
+          "effect_pp": {
+            "n": 210,
+            "n_topics": 7,
+            "mean": 12.857142857142856,
+            "topic_cluster_ci95": [
+              0.4761904761904762,
+              33.80952380952381
+            ],
+            "answer_iid_ci95_sensitivity": [
+              8.095238095238095,
+              18.095238095238095
+            ],
+            "domains": {
+              "Animals": {
+                "n": 30,
+                "mean": 0.0
+              },
+              "Chess Pieces": {
+                "n": 30,
+                "mean": 3.3333333333333335
+              },
+              "Flags": {
+                "n": 30,
+                "mean": 3.3333333333333335
+              },
+              "Game Boards": {
+                "n": 30,
+                "mean": -3.3333333333333335
+              },
+              "Logos": {
+                "n": 30,
+                "mean": 10.0
+              },
+              "Optical Illusion": {
+                "n": 30,
+                "mean": 3.3333333333333335
+              },
+              "Patterned Grid": {
+                "n": 30,
+                "mean": 73.33333333333333
+              }
+            }
+          }
+        },
+        "cue_vs_neutral_visual_match": {
+          "name": "cue_vs_neutral_visual_match",
+          "before_count": 40,
+          "after_count": 26,
+          "adopted": 0,
+          "lost": 14,
+          "effect_pp": {
+            "n": 210,
+            "n_topics": 7,
+            "mean": -6.666666666666667,
+            "topic_cluster_ci95": [
+              -16.19047619047619,
+              -0.9523809523809524
+            ],
+            "answer_iid_ci95_sensitivity": [
+              -10.0,
+              -3.3333333333333335
+            ],
+            "domains": {
+              "Animals": {
+                "n": 30,
+                "mean": 0.0
+              },
+              "Chess Pieces": {
+                "n": 30,
+                "mean": 0.0
+              },
+              "Flags": {
+                "n": 30,
+                "mean": -3.3333333333333335
+              },
+              "Game Boards": {
+                "n": 30,
+                "mean": 0.0
+              },
+              "Logos": {
+                "n": 30,
+                "mean": -3.3333333333333335
+              },
+              "Optical Illusion": {
+                "n": 30,
+                "mean": -33.33333333333333
+              },
+              "Patterned Grid": {
+                "n": 30,
+                "mean": -6.666666666666667
+              }
+            }
+          }
+        },
+        "visual_vs_neutral_cue_match": {
+          "name": "visual_vs_neutral_cue_match",
+          "before_count": 148,
+          "after_count": 127,
+          "adopted": 4,
+          "lost": 25,
+          "effect_pp": {
+            "n": 210,
+            "n_topics": 7,
+            "mean": -10.0,
+            "topic_cluster_ci95": [
+              -20.0,
+              -1.4285714285714286
+            ],
+            "answer_iid_ci95_sensitivity": [
+              -14.761904761904763,
+              -5.238095238095238
+            ],
+            "domains": {
+              "Animals": {
+                "n": 30,
+                "mean": -10.0
+              },
+              "Chess Pieces": {
+                "n": 30,
+                "mean": 6.666666666666667
+              },
+              "Flags": {
+                "n": 30,
+                "mean": -3.3333333333333335
+              },
+              "Game Boards": {
+                "n": 30,
+                "mean": -3.3333333333333335
+              },
+              "Logos": {
+                "n": 30,
+                "mean": -23.333333333333332
+              },
+              "Optical Illusion": {
+                "n": 30,
+                "mean": -3.3333333333333335
+              },
+              "Patterned Grid": {
+                "n": 30,
+                "mean": -33.33333333333333
+              }
+            }
+          }
+        }
+      },
+      "prefix_alignment": {
+        "n": 40,
+        "positives": 14,
+        "groups": 40,
+        "positive_rate": 0.35,
+        "metrics": {
+          "negative_delta_native_PCD": {
+            "auroc": 0.3708791208791209,
+            "auprc": 0.33612952571631594,
+            "auroc_ci95": [
+              0.17065,
+              0.5840291208791204
+            ],
+            "auprc_ci95": [
+              0.18935800578658507,
+              0.5893772961986672
+            ],
+            "valid_rounds": 5000
+          },
+          "negative_delta_prefix_numerator": {
+            "auroc": 0.6318681318681318,
+            "auprc": 0.49198127907769656,
+            "auroc_ci95": [
+              0.445141065830721,
+              0.818457738095238
+            ],
+            "auprc_ci95": [
+              0.2953959476661682,
+              0.781260217304625
+            ],
+            "valid_rounds": 5000
+          },
+          "negative_delta_full_logprob": {
+            "auroc": 0.5851648351648352,
+            "auprc": 0.6035720086398413,
+            "auroc_ci95": [
+              0.35936498397435895,
+              0.7887025590150588
+            ],
+            "auprc_ci95": [
+              0.3631352809938233,
+              0.810239414026145
+            ],
+            "valid_rounds": 5000
+          }
+        },
+        "paired_differences": {
+          "negative_delta_native_PCD minus negative_delta_prefix_numerator": {
+            "delta_auroc": -0.26098901098901095,
+            "ci95": [
+              -0.48122650375939846,
+              -0.04666184041184107
+            ]
+          },
+          "negative_delta_native_PCD minus negative_delta_full_logprob": {
+            "delta_auroc": -0.2142857142857143,
+            "ci95": [
+              -0.4700294486215538,
+              0.038467261904761796
+            ]
+          },
+          "negative_delta_prefix_numerator minus negative_delta_full_logprob": {
+            "delta_auroc": 0.04670329670329665,
+            "ci95": [
+              -0.232008881922675,
+              0.3413423197492162
+            ]
+          }
+        },
+        "low_event_warning": false,
+        "ci_note": "Few observed events can yield degenerate bootstrap intervals; they do not establish generalization."
+      },
+      "prefix_anchor_domains": {
+        "Animals": {
+          "n": 1,
+          "cue_adoption": 0
+        },
+        "Chess Pieces": {
+          "n": 0,
+          "cue_adoption": 0
+        },
+        "Flags": {
+          "n": 10,
+          "cue_adoption": 1
+        },
+        "Game Boards": {
+          "n": 6,
+          "cue_adoption": 0
+        },
+        "Logos": {
+          "n": 1,
+          "cue_adoption": 1
+        },
+        "Optical Illusion": {
+          "n": 20,
+          "cue_adoption": 10
+        },
+        "Patterned Grid": {
+          "n": 2,
+          "cue_adoption": 2
+        }
+      },
+      "visual_answer_counts_with_cue_separated": {
+        "base": {
+          "dataset_cue_answer_match": 35,
+          "original_visual_answer_match": 12,
+          "counterfactual_visual_answer_match": 4,
+          "other": 8
+        },
+        "counterfactual": {
+          "dataset_cue_answer_match": 38,
+          "original_visual_answer_match": 6,
+          "counterfactual_visual_answer_match": 9,
+          "other": 6
+        },
+        "sham": {
+          "dataset_cue_answer_match": 39,
+          "original_visual_answer_match": 12,
+          "counterfactual_visual_answer_match": 1,
+          "other": 7
+        }
+      },
+      "visual_anchor_alignment_by_domain": {
+        "all": {
+          "n": 12,
+          "following": 3,
+          "auroc": {
+            "vcd_level": 0.7407407407407407,
+            "vcd_increment": 0.7777777777777778,
+            "full_content_logprob": 1.0
+          }
+        },
+        "Flags": {
+          "n": 7,
+          "following": 3,
+          "auroc": {
+            "vcd_level": 1.0,
+            "vcd_increment": 0.5833333333333334,
+            "full_content_logprob": 1.0
+          }
+        },
+        "Game Boards": {
+          "n": 4,
+          "following": 0,
+          "auroc": {
+            "vcd_level": null,
+            "vcd_increment": null,
+            "full_content_logprob": null
+          }
+        },
+        "Patterned Grid": {
+          "n": 1,
+          "following": 0,
+          "auroc": {
+            "vcd_level": null,
+            "vcd_increment": null,
+            "full_content_logprob": null
+          }
+        }
+      },
+      "fixed_candidate_content_token_counts": {
+        "1": 179,
+        "2": 31
+      },
+      "visual_fixed_candidate_content_token_counts": {
+        "2": 16,
+        "1": 43
+      },
+      "visual_non_eos_counts": {
+        "base": 0,
+        "counterfactual": 0,
+        "sham": 0
+      },
+      "exclude_five_sham_same_pixel_vcd_cf_minus_sham": {
+        "n": 54,
+        "n_topics": 3,
+        "mean": -0.4067675821078638,
+        "topic_cluster_ci95": [
+          -0.49094941405813874,
+          -0.04656030879257475
+        ],
+        "answer_iid_ci95_sensitivity": [
+          -1.2004513316353067,
+          0.40729601791182235
+        ],
+        "domains": {
+          "Flags": {
+            "n": 24,
+            "mean": -0.4992149579002791
+          },
+          "Game Boards": {
+            "n": 25,
+            "mean": -0.46208359171712543
+          },
+          "Patterned Grid": {
+            "n": 5,
+            "mean": 0.3135598697420381
+          }
+        }
+      }
+    },
+    "32B": {
+      "source_sha256": {
+        "shard_0.jsonl": "915b953420a42f2bce984727279d97635b0239dab169d8d58444b3288cb08962",
+        "shard_1.jsonl": "90d4af5a43c9ee4fd2d6de7d8d93eb0a62b6018a61caefcf5dc61e7f4713b923",
+        "shard_2.jsonl": "0b13d6f9ab019a62d9bc00fb89fa9aa2e1268c46d9bf6a13c3c4c3913f5cf682",
+        "shard_3.jsonl": "b6713439bc4a212683c42e1f0e45f3b3f389ab674ddaa96cd88f1eb2c4672704",
+        "shard_4.jsonl": "fcee6d24b4d2c7a3202d55f48706e70aeb14a11558114aeef7ae05c68f32fa5e",
+        "shard_5.jsonl": "dcf6bf57d0021307a10a7d2017b3c542dddbcb7678b6e7df3a56f93eea6b810c",
+        "shard_6.jsonl": "484e53f520286b16842ab4bca7baa7fa2110fcb8bcf7ef3118e4f68ce76ae45b",
+        "shard_7.jsonl": "b49075ba09a2d3e27d715a149a67e9ed6de23c1fc0997cac6b7382b0041161d1"
+      },
+      "prefix_conditions": {
+        "neutral": {
+          "answer_counts": {
+            "visual_answer_match": 45,
+            "cue_answer_match": 145,
+            "other": 20
+          },
+          "rates_pct": {
+            "visual_answer_match": 21.428571428571427,
+            "cue_answer_match": 69.04761904761905,
+            "other": 9.523809523809524
+          },
+          "mean_generated_tokens": 7.204761904761905,
+          "median_generated_tokens": 6.0,
+          "non_eos": 8,
+          "at_24_tokens": 8
+        },
+        "cue": {
+          "answer_counts": {
+            "visual_answer_match": 22,
+            "cue_answer_match": 187,
+            "other": 1
+          },
+          "rates_pct": {
+            "visual_answer_match": 10.476190476190476,
+            "cue_answer_match": 89.04761904761904,
+            "other": 0.4761904761904762
+          },
+          "mean_generated_tokens": 6.428571428571429,
+          "median_generated_tokens": 7.0,
+          "non_eos": 0,
+          "at_24_tokens": 0
+        },
+        "visual": {
+          "answer_counts": {
+            "visual_answer_match": 102,
+            "cue_answer_match": 88,
+            "other": 20
+          },
+          "rates_pct": {
+            "visual_answer_match": 48.57142857142857,
+            "cue_answer_match": 41.904761904761905,
+            "other": 9.523809523809524
+          },
+          "mean_generated_tokens": 7.9523809523809526,
+          "median_generated_tokens": 6.5,
+          "non_eos": 19,
+          "at_24_tokens": 19
+        }
+      },
+      "prefix_paired_behavior": {
+        "cue_vs_neutral_cue_match": {
+          "name": "cue_vs_neutral_cue_match",
+          "before_count": 145,
+          "after_count": 187,
+          "adopted": 43,
+          "lost": 1,
+          "effect_pp": {
+            "n": 210,
+            "n_topics": 7,
+            "mean": 20.0,
+            "topic_cluster_ci95": [
+              9.047619047619047,
+              33.33333333333333
+            ],
+            "answer_iid_ci95_sensitivity": [
+              14.285714285714285,
+              25.71428571428571
+            ],
+            "domains": {
+              "Animals": {
+                "n": 30,
+                "mean": 6.666666666666667
+              },
+              "Chess Pieces": {
+                "n": 30,
+                "mean": 10.0
+              },
+              "Flags": {
+                "n": 30,
+                "mean": 3.3333333333333335
+              },
+              "Game Boards": {
+                "n": 30,
+                "mean": 20.0
+              },
+              "Logos": {
+                "n": 30,
+                "mean": 13.333333333333334
+              },
+              "Optical Illusion": {
+                "n": 30,
+                "mean": 33.33333333333333
+              },
+              "Patterned Grid": {
+                "n": 30,
+                "mean": 53.333333333333336
+              }
+            }
+          }
+        },
+        "visual_vs_neutral_visual_match": {
+          "name": "visual_vs_neutral_visual_match",
+          "before_count": 45,
+          "after_count": 102,
+          "adopted": 57,
+          "lost": 0,
+          "effect_pp": {
+            "n": 210,
+            "n_topics": 7,
+            "mean": 27.142857142857142,
+            "topic_cluster_ci95": [
+              16.19047619047619,
+              40.0
+            ],
+            "answer_iid_ci95_sensitivity": [
+              21.428571428571427,
+              33.33333333333333
+            ],
+            "domains": {
+              "Animals": {
+                "n": 30,
+                "mean": 10.0
+              },
+              "Chess Pieces": {
+                "n": 30,
+                "mean": 23.333333333333332
+              },
+              "Flags": {
+                "n": 30,
+                "mean": 16.666666666666664
+              },
+              "Game Boards": {
+                "n": 30,
+                "mean": 46.666666666666664
+              },
+              "Logos": {
+                "n": 30,
+                "mean": 23.333333333333332
+              },
+              "Optical Illusion": {
+                "n": 30,
+                "mean": 13.333333333333334
+              },
+              "Patterned Grid": {
+                "n": 30,
+                "mean": 56.666666666666664
+              }
+            }
+          }
+        },
+        "cue_vs_neutral_visual_match": {
+          "name": "cue_vs_neutral_visual_match",
+          "before_count": 45,
+          "after_count": 22,
+          "adopted": 1,
+          "lost": 24,
+          "effect_pp": {
+            "n": 210,
+            "n_topics": 7,
+            "mean": -10.952380952380953,
+            "topic_cluster_ci95": [
+              -20.952380952380953,
+              -2.380952380952381
+            ],
+            "answer_iid_ci95_sensitivity": [
+              -15.714285714285714,
+              -6.666666666666667
+            ],
+            "domains": {
+              "Animals": {
+                "n": 30,
+                "mean": -3.3333333333333335
+              },
+              "Chess Pieces": {
+                "n": 30,
+                "mean": 0.0
+              },
+              "Flags": {
+                "n": 30,
+                "mean": 0.0
+              },
+              "Game Boards": {
+                "n": 30,
+                "mean": -16.666666666666664
+              },
+              "Logos": {
+                "n": 30,
+                "mean": 0.0
+              },
+              "Optical Illusion": {
+                "n": 30,
+                "mean": -33.33333333333333
+              },
+              "Patterned Grid": {
+                "n": 30,
+                "mean": -23.333333333333332
+              }
+            }
+          }
+        },
+        "visual_vs_neutral_cue_match": {
+          "name": "visual_vs_neutral_cue_match",
+          "before_count": 145,
+          "after_count": 88,
+          "adopted": 1,
+          "lost": 58,
+          "effect_pp": {
+            "n": 210,
+            "n_topics": 7,
+            "mean": -27.142857142857142,
+            "topic_cluster_ci95": [
+              -37.142857142857146,
+              -18.095238095238095
+            ],
+            "answer_iid_ci95_sensitivity": [
+              -33.33333333333333,
+              -20.952380952380953
+            ],
+            "domains": {
+              "Animals": {
+                "n": 30,
+                "mean": -33.33333333333333
+              },
+              "Chess Pieces": {
+                "n": 30,
+                "mean": -46.666666666666664
+              },
+              "Flags": {
+                "n": 30,
+                "mean": -16.666666666666664
+              },
+              "Game Boards": {
+                "n": 30,
+                "mean": -43.333333333333336
+              },
+              "Logos": {
+                "n": 30,
+                "mean": -13.333333333333334
+              },
+              "Optical Illusion": {
+                "n": 30,
+                "mean": -13.333333333333334
+              },
+              "Patterned Grid": {
+                "n": 30,
+                "mean": -23.333333333333332
+              }
+            }
+          }
+        }
+      },
+      "prefix_alignment": {
+        "n": 45,
+        "positives": 24,
+        "groups": 45,
+        "positive_rate": 0.5333333333333333,
+        "metrics": {
+          "negative_delta_native_PCD": {
+            "auroc": 0.4146825396825397,
+            "auprc": 0.5075714507275982,
+            "auroc_ci95": [
+              0.24074074074074073,
+              0.5971868421052628
+            ],
+            "auprc_ci95": [
+              0.35346623760934065,
+              0.7330216376597162
+            ],
+            "valid_rounds": 5000
+          },
+          "negative_delta_prefix_numerator": {
+            "auroc": 0.6884920634920635,
+            "auprc": 0.6446865920293078,
+            "auroc_ci95": [
+              0.5146983175986444,
+              0.8500050607287448
+            ],
+            "auprc_ci95": [
+              0.47824962372354746,
+              0.8800481475197083
+            ],
+            "valid_rounds": 5000
+          },
+          "negative_delta_full_logprob": {
+            "auroc": 0.9623015873015873,
+            "auprc": 0.9721310932266309,
+            "auroc_ci95": [
+              0.9008093149540518,
+              1.0
+            ],
+            "auprc_ci95": [
+              0.9207619682234242,
+              1.0
+            ],
+            "valid_rounds": 5000
+          }
+        },
+        "paired_differences": {
+          "negative_delta_native_PCD minus negative_delta_prefix_numerator": {
+            "delta_auroc": -0.2738095238095238,
+            "ci95": [
+              -0.5000494071146245,
+              -0.03844246031746057
+            ]
+          },
+          "negative_delta_native_PCD minus negative_delta_full_logprob": {
+            "delta_auroc": -0.5476190476190477,
+            "ci95": [
+              -0.7292717548152331,
+              -0.3531687675070029
+            ]
+          },
+          "negative_delta_prefix_numerator minus negative_delta_full_logprob": {
+            "delta_auroc": -0.27380952380952384,
+            "ci95": [
+              -0.4475023342670401,
+              -0.10323725981620724
+            ]
+          }
+        },
+        "low_event_warning": false,
+        "ci_note": "Few observed events can yield degenerate bootstrap intervals; they do not establish generalization."
+      },
+      "prefix_anchor_domains": {
+        "Animals": {
+          "n": 2,
+          "cue_adoption": 1
+        },
+        "Chess Pieces": {
+          "n": 0,
+          "cue_adoption": 0
+        },
+        "Flags": {
+          "n": 12,
+          "cue_adoption": 1
+        },
+        "Game Boards": {
+          "n": 5,
+          "cue_adoption": 5
+        },
+        "Logos": {
+          "n": 0,
+          "cue_adoption": 0
+        },
+        "Optical Illusion": {
+          "n": 18,
+          "cue_adoption": 10
+        },
+        "Patterned Grid": {
+          "n": 8,
+          "cue_adoption": 7
+        }
+      },
+      "visual_answer_counts_with_cue_separated": {
+        "base": {
+          "dataset_cue_answer_match": 40,
+          "counterfactual_visual_answer_match": 3,
+          "original_visual_answer_match": 14,
+          "other": 2
+        },
+        "counterfactual": {
+          "dataset_cue_answer_match": 36,
+          "other": 7,
+          "counterfactual_visual_answer_match": 14,
+          "original_visual_answer_match": 2
+        },
+        "sham": {
+          "dataset_cue_answer_match": 41,
+          "counterfactual_visual_answer_match": 3,
+          "original_visual_answer_match": 14,
+          "other": 1
+        }
+      },
+      "visual_anchor_alignment_by_domain": {
+        "all": {
+          "n": 14,
+          "following": 5,
+          "auroc": {
+            "vcd_level": 0.7555555555555555,
+            "vcd_increment": 0.3333333333333333,
+            "full_content_logprob": 0.37777777777777777
+          }
+        },
+        "Flags": {
+          "n": 9,
+          "following": 3,
+          "auroc": {
+            "vcd_level": 0.6666666666666666,
+            "vcd_increment": 0.5,
+            "full_content_logprob": 0.1111111111111111
+          }
+        },
+        "Game Boards": {
+          "n": 5,
+          "following": 2,
+          "auroc": {
+            "vcd_level": 1.0,
+            "vcd_increment": 0.0,
+            "full_content_logprob": 1.0
+          }
+        },
+        "Patterned Grid": {
+          "n": 0,
+          "following": 0,
+          "auroc": {
+            "vcd_level": null,
+            "vcd_increment": null,
+            "full_content_logprob": null
+          }
+        }
+      },
+      "fixed_candidate_content_token_counts": {
+        "1": 179,
+        "2": 31
+      },
+      "visual_fixed_candidate_content_token_counts": {
+        "2": 16,
+        "1": 43
+      },
+      "visual_non_eos_counts": {
+        "base": 0,
+        "counterfactual": 0,
+        "sham": 0
+      },
+      "exclude_five_sham_same_pixel_vcd_cf_minus_sham": {
+        "n": 54,
+        "n_topics": 3,
+        "mean": -0.058170672939410376,
+        "topic_cluster_ci95": [
+          -0.2264537784866079,
+          0.6399756726014425
+        ],
+        "answer_iid_ci95_sensitivity": [
+          -0.5726098656829387,
+          0.45746327054020625
+        ],
+        "domains": {
+          "Flags": {
+            "n": 24,
+            "mean": -0.24722443001223426
+          },
+          "Game Boards": {
+            "n": 25,
+            "mean": -0.15391627238942046
+          },
+          "Patterned Grid": {
+            "n": 5,
+            "mean": 1.3280153582601943
+          }
+        }
+      }
+    }
+  },
+  "matched_scale_effects": {
+    "cue_vs_neutral_cue_match": {
+      "n": 210,
+      "n_topics": 7,
+      "mean": 7.142857142857142,
+      "topic_cluster_ci95": [
+        0.9523809523809524,
+        15.714285714285714
+      ],
+      "answer_iid_ci95_sensitivity": [
+        0.0,
+        14.285714285714285
+      ],
+      "domains": {
+        "Animals": {
+          "n": 30,
+          "mean": 6.666666666666667
+        },
+        "Chess Pieces": {
+          "n": 30,
+          "mean": -3.3333333333333335
+        },
+        "Flags": {
+          "n": 30,
+          "mean": 0.0
+        },
+        "Game Boards": {
+          "n": 30,
+          "mean": 30.0
+        },
+        "Logos": {
+          "n": 30,
+          "mean": 10.0
+        },
+        "Optical Illusion": {
+          "n": 30,
+          "mean": 0.0
+        },
+        "Patterned Grid": {
+          "n": 30,
+          "mean": 6.666666666666667
+        }
+      }
+    },
+    "visual_vs_neutral_visual_match": {
+      "n": 210,
+      "n_topics": 7,
+      "mean": 14.285714285714285,
+      "topic_cluster_ci95": [
+        0.9523809523809524,
+        28.57142857142857
+      ],
+      "answer_iid_ci95_sensitivity": [
+        8.095238095238095,
+        20.476190476190474
+      ],
+      "domains": {
+        "Animals": {
+          "n": 30,
+          "mean": 10.0
+        },
+        "Chess Pieces": {
+          "n": 30,
+          "mean": 20.0
+        },
+        "Flags": {
+          "n": 30,
+          "mean": 13.333333333333334
+        },
+        "Game Boards": {
+          "n": 30,
+          "mean": 50.0
+        },
+        "Logos": {
+          "n": 30,
+          "mean": 13.333333333333334
+        },
+        "Optical Illusion": {
+          "n": 30,
+          "mean": 10.0
+        },
+        "Patterned Grid": {
+          "n": 30,
+          "mean": -16.666666666666664
+        }
+      }
+    },
+    "cue_vs_neutral_visual_match": {
+      "n": 210,
+      "n_topics": 7,
+      "mean": -4.285714285714286,
+      "topic_cluster_ci95": [
+        -10.476190476190476,
+        1.4285714285714286
+      ],
+      "answer_iid_ci95_sensitivity": [
+        -9.523809523809524,
+        0.9523809523809524
+      ],
+      "domains": {
+        "Animals": {
+          "n": 30,
+          "mean": -3.3333333333333335
+        },
+        "Chess Pieces": {
+          "n": 30,
+          "mean": 0.0
+        },
+        "Flags": {
+          "n": 30,
+          "mean": 3.3333333333333335
+        },
+        "Game Boards": {
+          "n": 30,
+          "mean": -16.666666666666664
+        },
+        "Logos": {
+          "n": 30,
+          "mean": 3.3333333333333335
+        },
+        "Optical Illusion": {
+          "n": 30,
+          "mean": 0.0
+        },
+        "Patterned Grid": {
+          "n": 30,
+          "mean": -16.666666666666664
+        }
+      }
+    },
+    "visual_vs_neutral_cue_match": {
+      "n": 210,
+      "n_topics": 7,
+      "mean": -17.142857142857142,
+      "topic_cluster_ci95": [
+        -33.80952380952381,
+        -0.9523809523809524
+      ],
+      "answer_iid_ci95_sensitivity": [
+        -25.238095238095237,
+        -9.047619047619047
+      ],
+      "domains": {
+        "Animals": {
+          "n": 30,
+          "mean": -23.333333333333332
+        },
+        "Chess Pieces": {
+          "n": 30,
+          "mean": -53.333333333333336
+        },
+        "Flags": {
+          "n": 30,
+          "mean": -13.333333333333334
+        },
+        "Game Boards": {
+          "n": 30,
+          "mean": -40.0
+        },
+        "Logos": {
+          "n": 30,
+          "mean": 10.0
+        },
+        "Optical Illusion": {
+          "n": 30,
+          "mean": -10.0
+        },
+        "Patterned Grid": {
+          "n": 30,
+          "mean": 10.0
+        }
+      }
+    }
+  },
+  "posthoc_sensitivity": {
+    "cue_vs_neutral_cue_match": {
+      "excluded_any_model_any_prefix_non_eos": 33,
+      "n_retained": 177,
+      "scale_interaction_pp": 6.214689265536723,
+      "models": {
+        "8B": {
+          "name": "cue_vs_neutral_cue_match",
+          "before_count": 119,
+          "after_count": 142,
+          "adopted": 27,
+          "lost": 4,
+          "effect_pp": {
+            "n": 177,
+            "n_topics": 7,
+            "mean": 12.994350282485875,
+            "topic_cluster_ci95": [
+              -2.4390243902439024,
+              28.723404255319153
+            ],
+            "answer_iid_ci95_sensitivity": [
+              7.344632768361582,
+              18.64406779661017
+            ],
+            "domains": {
+              "Animals": {
+                "n": 19,
+                "mean": 0.0
+              },
+              "Chess Pieces": {
+                "n": 19,
+                "mean": 0.0
+              },
+              "Flags": {
+                "n": 30,
+                "mean": 3.3333333333333335
+              },
+              "Game Boards": {
+                "n": 28,
+                "mean": -10.714285714285714
+              },
+              "Logos": {
+                "n": 21,
+                "mean": 4.761904761904762
+              },
+              "Optical Illusion": {
+                "n": 30,
+                "mean": 33.33333333333333
+              },
+              "Patterned Grid": {
+                "n": 30,
+                "mean": 46.666666666666664
+              }
+            }
+          }
+        },
+        "32B": {
+          "name": "cue_vs_neutral_cue_match",
+          "before_count": 120,
+          "after_count": 154,
+          "adopted": 35,
+          "lost": 1,
+          "effect_pp": {
+            "n": 177,
+            "n_topics": 7,
+            "mean": 19.2090395480226,
+            "topic_cluster_ci95": [
+              5.031446540880504,
+              34.04255319148936
+            ],
+            "answer_iid_ci95_sensitivity": [
+              13.559322033898304,
+              25.423728813559322
+            ],
+            "domains": {
+              "Animals": {
+                "n": 19,
+                "mean": 5.263157894736842
+              },
+              "Chess Pieces": {
+                "n": 19,
+                "mean": 5.263157894736842
+              },
+              "Flags": {
+                "n": 30,
+                "mean": 3.3333333333333335
+              },
+              "Game Boards": {
+                "n": 28,
+                "mean": 17.857142857142858
+              },
+              "Logos": {
+                "n": 21,
+                "mean": 0.0
+              },
+              "Optical Illusion": {
+                "n": 30,
+                "mean": 33.33333333333333
+              },
+              "Patterned Grid": {
+                "n": 30,
+                "mean": 53.333333333333336
+              }
+            }
+          }
+        }
+      }
+    },
+    "visual_vs_neutral_visual_match": {
+      "excluded_any_model_any_prefix_non_eos": 33,
+      "n_retained": 177,
+      "scale_interaction_pp": 14.124293785310735,
+      "models": {
+        "8B": {
+          "name": "visual_vs_neutral_visual_match",
+          "before_count": 40,
+          "after_count": 66,
+          "adopted": 28,
+          "lost": 2,
+          "effect_pp": {
+            "n": 177,
+            "n_topics": 7,
+            "mean": 14.689265536723164,
+            "topic_cluster_ci95": [
+              0.5494505494505495,
+              38.4180790960452
+            ],
+            "answer_iid_ci95_sensitivity": [
+              9.6045197740113,
+              20.33898305084746
+            ],
+            "domains": {
+              "Animals": {
+                "n": 19,
+                "mean": 0.0
+              },
+              "Chess Pieces": {
+                "n": 19,
+                "mean": 5.263157894736842
+              },
+              "Flags": {
+                "n": 30,
+                "mean": 3.3333333333333335
+              },
+              "Game Boards": {
+                "n": 28,
+                "mean": -3.571428571428571
+              },
+              "Logos": {
+                "n": 21,
+                "mean": 9.523809523809524
+              },
+              "Optical Illusion": {
+                "n": 30,
+                "mean": 3.3333333333333335
+              },
+              "Patterned Grid": {
+                "n": 30,
+                "mean": 73.33333333333333
+              }
+            }
+          }
+        },
+        "32B": {
+          "name": "visual_vs_neutral_visual_match",
+          "before_count": 44,
+          "after_count": 95,
+          "adopted": 51,
+          "lost": 0,
+          "effect_pp": {
+            "n": 177,
+            "n_topics": 7,
+            "mean": 28.8135593220339,
+            "topic_cluster_ci95": [
+              15.263157894736842,
+              43.005181347150256
+            ],
+            "answer_iid_ci95_sensitivity": [
+              22.033898305084744,
+              35.59322033898305
+            ],
+            "domains": {
+              "Animals": {
+                "n": 19,
+                "mean": 15.789473684210526
+              },
+              "Chess Pieces": {
+                "n": 19,
+                "mean": 31.57894736842105
+              },
+              "Flags": {
+                "n": 30,
+                "mean": 16.666666666666664
+              },
+              "Game Boards": {
+                "n": 28,
+                "mean": 50.0
+              },
+              "Logos": {
+                "n": 21,
+                "mean": 9.523809523809524
+              },
+              "Optical Illusion": {
+                "n": 30,
+                "mean": 13.333333333333334
+              },
+              "Patterned Grid": {
+                "n": 30,
+                "mean": 56.666666666666664
+              }
+            }
+          }
+        }
+      }
+    },
+    "cue_vs_neutral_visual_match": {
+      "excluded_any_model_any_prefix_non_eos": 33,
+      "n_retained": 177,
+      "scale_interaction_pp": -4.519774011299435,
+      "models": {
+        "8B": {
+          "name": "cue_vs_neutral_visual_match",
+          "before_count": 40,
+          "after_count": 26,
+          "adopted": 0,
+          "lost": 14,
+          "effect_pp": {
+            "n": 177,
+            "n_topics": 7,
+            "mean": -7.909604519774012,
+            "topic_cluster_ci95": [
+              -17.894736842105264,
+              -1.2195121951219512
+            ],
+            "answer_iid_ci95_sensitivity": [
+              -11.864406779661017,
+              -3.954802259887006
+            ],
+            "domains": {
+              "Animals": {
+                "n": 19,
+                "mean": 0.0
+              },
+              "Chess Pieces": {
+                "n": 19,
+                "mean": 0.0
+              },
+              "Flags": {
+                "n": 30,
+                "mean": -3.3333333333333335
+              },
+              "Game Boards": {
+                "n": 28,
+                "mean": 0.0
+              },
+              "Logos": {
+                "n": 21,
+                "mean": -4.761904761904762
+              },
+              "Optical Illusion": {
+                "n": 30,
+                "mean": -33.33333333333333
+              },
+              "Patterned Grid": {
+                "n": 30,
+                "mean": -6.666666666666667
+              }
+            }
+          }
+        },
+        "32B": {
+          "name": "cue_vs_neutral_visual_match",
+          "before_count": 44,
+          "after_count": 22,
+          "adopted": 1,
+          "lost": 23,
+          "effect_pp": {
+            "n": 177,
+            "n_topics": 7,
+            "mean": -12.429378531073446,
+            "topic_cluster_ci95": [
+              -22.043010752688172,
+              -2.6881720430107525
+            ],
+            "answer_iid_ci95_sensitivity": [
+              -17.51412429378531,
+              -7.344632768361582
+            ],
+            "domains": {
+              "Animals": {
+                "n": 19,
+                "mean": -5.263157894736842
+              },
+              "Chess Pieces": {
+                "n": 19,
+                "mean": 0.0
+              },
+              "Flags": {
+                "n": 30,
+                "mean": 0.0
+              },
+              "Game Boards": {
+                "n": 28,
+                "mean": -14.285714285714285
+              },
+              "Logos": {
+                "n": 21,
+                "mean": 0.0
+              },
+              "Optical Illusion": {
+                "n": 30,
+                "mean": -33.33333333333333
+              },
+              "Patterned Grid": {
+                "n": 30,
+                "mean": -23.333333333333332
+              }
+            }
+          }
+        }
+      }
+    },
+    "visual_vs_neutral_cue_match": {
+      "excluded_any_model_any_prefix_non_eos": 33,
+      "n_retained": 177,
+      "scale_interaction_pp": -13.559322033898304,
+      "models": {
+        "8B": {
+          "name": "visual_vs_neutral_cue_match",
+          "before_count": 119,
+          "after_count": 104,
+          "adopted": 1,
+          "lost": 16,
+          "effect_pp": {
+            "n": 177,
+            "n_topics": 7,
+            "mean": -8.47457627118644,
+            "topic_cluster_ci95": [
+              -18.947368421052634,
+              -0.5847953216374269
+            ],
+            "answer_iid_ci95_sensitivity": [
+              -12.994350282485875,
+              -3.954802259887006
+            ],
+            "domains": {
+              "Animals": {
+                "n": 19,
+                "mean": 0.0
+              },
+              "Chess Pieces": {
+                "n": 19,
+                "mean": -5.263157894736842
+              },
+              "Flags": {
+                "n": 30,
+                "mean": -3.3333333333333335
+              },
+              "Game Boards": {
+                "n": 28,
+                "mean": 3.571428571428571
+              },
+              "Logos": {
+                "n": 21,
+                "mean": -14.285714285714285
+              },
+              "Optical Illusion": {
+                "n": 30,
+                "mean": -3.3333333333333335
+              },
+              "Patterned Grid": {
+                "n": 30,
+                "mean": -33.33333333333333
+              }
+            }
+          }
+        },
+        "32B": {
+          "name": "visual_vs_neutral_cue_match",
+          "before_count": 120,
+          "after_count": 81,
+          "adopted": 1,
+          "lost": 40,
+          "effect_pp": {
+            "n": 177,
+            "n_topics": 7,
+            "mean": -22.033898305084744,
+            "topic_cluster_ci95": [
+              -31.79190751445087,
+              -14.534883720930234
+            ],
+            "answer_iid_ci95_sensitivity": [
+              -28.24858757062147,
+              -15.819209039548024
+            ],
+            "domains": {
+              "Animals": {
+                "n": 19,
+                "mean": -15.789473684210526
+              },
+              "Chess Pieces": {
+                "n": 19,
+                "mean": -26.31578947368421
+              },
+              "Flags": {
+                "n": 30,
+                "mean": -16.666666666666664
+              },
+              "Game Boards": {
+                "n": 28,
+                "mean": -46.42857142857143
+              },
+              "Logos": {
+                "n": 21,
+                "mean": -9.523809523809524
+              },
+              "Optical Illusion": {
+                "n": 30,
+                "mean": -13.333333333333334
+              },
+              "Patterned Grid": {
+                "n": 30,
+                "mean": -23.333333333333332
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "interpretation": [
+    "All original outputs are retained; no direction flipping or GPU inference.",
+    "Answer matches are behavioral proxies, not internal-source ground truth.",
+    "Primary behavioral CIs resample complete topics; only seven supplied benchmark topics exist.",
+    "Visual analyses cover Flags, Game Boards, Patterned Grid; generated-answer anchors are smaller subsets.",
+    "Sham-identical exclusion is a post-hoc sensitivity, not grounds to remove primary records.",
+    "Non-EOS exclusions are post-hoc and outcome-dependent; rates under strict matching may change with continuation length."
+  ]
+}

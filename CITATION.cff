@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+message: "If you use these experiment artifacts, please cite the associated paper and the upstream datasets/models."
+title: "Causal Drives: Experiments and Reproduction Artifacts"
+authors:
+  - family-names: Shaw
+    given-names: Winnie
+license: MIT
+type: software

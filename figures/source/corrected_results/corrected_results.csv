@@ -1,0 +1,19 @@
+section,metric,estimate,ci_low,ci_high,position
+length,QCD,0.8025,0.7635,0.8358,
+length,VCD,0.6881,0.6337,0.7355,
+length,PCD,0.8939,0.8718,0.9128,
+raw,QCD,28.147,,,first
+raw,QCD,225.591,,,last
+raw,PCD,26.821,,,first
+raw,PCD,284.719,,,last
+mean,QCD,122.6925,118.4220,127.0398,
+mean,VCD,64.7654,61.0996,68.4688,
+mean,PCD,147.2749,142.3838,152.4066,
+quality,QCD,0.0992,0.0097,0.1924,Token F1
+quality,VCD,0.0587,-0.0347,0.1473,Token F1
+quality,PCD,0.0528,-0.0402,0.1423,Token F1
+quality,QCD,0.0698,-0.0198,0.1597,ROUGE-L
+quality,VCD,0.0264,-0.0653,0.1149,ROUGE-L
+quality,PCD,0.0113,-0.0801,0.1003,ROUGE-L
+recovery,Question,4.41498,-4.0883,12.3643,
+recovery,Prefix,0.26731,0.0931,0.4526,

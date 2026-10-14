@@ -1,0 +1,11 @@
+{
+  "num_valid_samples": 500,
+  "bins": 10,
+  "bootstrap": 5000,
+  "schema": [
+    "QCD",
+    "VCD",
+    "PCD"
+  ],
+  "vcd_intervention": "target_image_with_null_question"
+}

@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+figures/pdf/*.png
+figures/pdf/*.svg
+figures/pdf/*.tif
+figures/pdf/*.tiff
+figures/pdf/*.alignment.json
+figures/pdf/*.alignment.svg
+figures/pdf/*.collision-*
+figures/pdf/*.text-audit.json
+figures/pdf/provenance.json
+data/raw_local_only/
+outputs/

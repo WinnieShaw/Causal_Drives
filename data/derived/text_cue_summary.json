@@ -1,0 +1,221 @@
+{
+  "status": "completed_source_data_cpu_reanalysis",
+  "seed": 42,
+  "answer_bootstrap_rounds": 10000,
+  "domain_bootstrap": "Exact enumeration of all 7^7 = 823543 ordered topic-cluster resamples",
+  "behaviour_ci_unit": "Seven topics resampled as complete matched clusters",
+  "cohort": "All completed examples for behaviour; base and neutral both visual-reference matches for QCD",
+  "models": {
+    "8B": {
+      "behaviour": {
+        "n": 700,
+        "n_topics": 7,
+        "neutral_count": 504,
+        "cue_count": 540,
+        "neutral_rate_pct": 72.0,
+        "cue_rate_pct": 77.14285714285715,
+        "paired_delta_pp": 5.142857142857142,
+        "paired_delta_domain_ci95_pp": [
+          0.42857142857142855,
+          10.571428571428571
+        ],
+        "paired_delta_answer_ci95_pp": [
+          3.1428571428571432,
+          7.285714285714286
+        ],
+        "adopted_count": 46,
+        "lost_count": 10,
+        "domains": [
+          {
+            "topic": "Animals",
+            "n": 100,
+            "neutral_count": 99,
+            "cue_count": 99,
+            "paired_delta_pp": 0.0
+          },
+          {
+            "topic": "Chess Pieces",
+            "n": 100,
+            "neutral_count": 74,
+            "cue_count": 88,
+            "paired_delta_pp": 14.000000000000002
+          },
+          {
+            "topic": "Flags",
+            "n": 100,
+            "neutral_count": 63,
+            "cue_count": 65,
+            "paired_delta_pp": 2.0
+          },
+          {
+            "topic": "Game Boards",
+            "n": 100,
+            "neutral_count": 87,
+            "cue_count": 84,
+            "paired_delta_pp": -3.0
+          },
+          {
+            "topic": "Logos",
+            "n": 100,
+            "neutral_count": 92,
+            "cue_count": 97,
+            "paired_delta_pp": 5.0
+          },
+          {
+            "topic": "Optical Illusion",
+            "n": 100,
+            "neutral_count": 45,
+            "cue_count": 46,
+            "paired_delta_pp": 1.0
+          },
+          {
+            "topic": "Patterned Grid",
+            "n": 100,
+            "neutral_count": 44,
+            "cue_count": 61,
+            "paired_delta_pp": 17.0
+          }
+        ]
+      },
+      "qcd_cohort_n": 91,
+      "qcd_outcome_counts": {
+        "visual_answer_match": 83,
+        "other": 3,
+        "cue_answer_match": 5,
+        "ambiguous_match": 0
+      },
+      "qcd_exploratory_auroc": {
+        "n": 91,
+        "positives": 5,
+        "groups": 91,
+        "positive_rate": 0.054945054945054944,
+        "metrics": {
+          "qcd_support_loss_bits": {
+            "auroc": 0.958139534883721,
+            "auprc": 0.6893939393939394,
+            "auroc_ci95": [
+              0.888266073871409,
+              1.0
+            ],
+            "auprc_ci95": [
+              0.18429015837104076,
+              1.0
+            ],
+            "valid_rounds": 4970
+          }
+        },
+        "paired_differences": {},
+        "low_event_warning": true,
+        "ci_note": "Few observed events can yield degenerate bootstrap intervals; they do not establish generalization."
+      }
+    },
+    "32B": {
+      "behaviour": {
+        "n": 140,
+        "n_topics": 7,
+        "neutral_count": 94,
+        "cue_count": 102,
+        "neutral_rate_pct": 67.14285714285714,
+        "cue_rate_pct": 72.85714285714285,
+        "paired_delta_pp": 5.714285714285714,
+        "paired_delta_domain_ci95_pp": [
+          0.7142857142857143,
+          12.857142857142858
+        ],
+        "paired_delta_answer_ci95_pp": [
+          1.4285714285714286,
+          10.714285714285714
+        ],
+        "adopted_count": 10,
+        "lost_count": 2,
+        "domains": [
+          {
+            "topic": "Animals",
+            "n": 20,
+            "neutral_count": 19,
+            "cue_count": 19,
+            "paired_delta_pp": 0.0
+          },
+          {
+            "topic": "Chess Pieces",
+            "n": 20,
+            "neutral_count": 15,
+            "cue_count": 20,
+            "paired_delta_pp": 25.0
+          },
+          {
+            "topic": "Flags",
+            "n": 20,
+            "neutral_count": 10,
+            "cue_count": 10,
+            "paired_delta_pp": 0.0
+          },
+          {
+            "topic": "Game Boards",
+            "n": 20,
+            "neutral_count": 17,
+            "cue_count": 17,
+            "paired_delta_pp": 0.0
+          },
+          {
+            "topic": "Logos",
+            "n": 20,
+            "neutral_count": 19,
+            "cue_count": 20,
+            "paired_delta_pp": 5.0
+          },
+          {
+            "topic": "Optical Illusion",
+            "n": 20,
+            "neutral_count": 9,
+            "cue_count": 9,
+            "paired_delta_pp": 0.0
+          },
+          {
+            "topic": "Patterned Grid",
+            "n": 20,
+            "neutral_count": 5,
+            "cue_count": 7,
+            "paired_delta_pp": 10.0
+          }
+        ]
+      },
+      "qcd_cohort_n": 24,
+      "qcd_outcome_counts": {
+        "visual_answer_match": 22,
+        "other": 1,
+        "cue_answer_match": 1,
+        "ambiguous_match": 0
+      },
+      "qcd_exploratory_auroc": {
+        "n": 24,
+        "positives": 1,
+        "groups": 24,
+        "positive_rate": 0.041666666666666664,
+        "metrics": {
+          "qcd_support_loss_bits": {
+            "auroc": 1.0,
+            "auprc": 1.0,
+            "auroc_ci95": [
+              1.0,
+              1.0
+            ],
+            "auprc_ci95": [
+              1.0,
+              1.0
+            ],
+            "valid_rounds": 3172
+          }
+        },
+        "paired_differences": {},
+        "low_event_warning": true,
+        "ci_note": "Few observed events can yield degenerate bootstrap intervals; they do not establish generalization."
+      }
+    }
+  },
+  "interpretation": [
+    "Cue matching is an observable answer behaviour, not a label for an internal reasoning source.",
+    "QCD has five 8B adoption events and one 32B event; it is exploratory, not robust source identification.",
+    "No generic error detection, probability baseline superiority or early-warning claim is tested."
+  ]
+}

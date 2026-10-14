@@ -1,0 +1,3848 @@
+{
+  "8b": {
+    "max_reconstruction_error": 1.1368683772161603e-13,
+    "protocol": "Posthoc unified consistent-brace/first-line partition; all three models, both interventions, all windows retained",
+    "kinds": {
+      "question": {
+        "behavior_effect": {
+          "n": 210,
+          "groups": 7,
+          "mean": 0.20476190476190476,
+          "ci95": [
+            0.06666666666666667,
+            0.3952380952380952
+          ],
+          "bootstrap": "paired topic-cluster; 5000 draws"
+        },
+        "windows": {
+          "all_content": {
+            "n": 33,
+            "positives": 11,
+            "groups": 4,
+            "positive_rate": 0.3333333333333333,
+            "metrics": {
+              "native_support_loss": {
+                "auroc": 0.7148760330578512,
+                "auprc": 0.6337761679827488,
+                "auroc_ci95": [
+                  0.4875,
+                  1.0
+                ],
+                "auprc_ci95": [
+                  0.26957070707070707,
+                  1.0
+                ],
+                "valid_rounds": 4967
+              },
+              "full_conditional_logprob_loss": {
+                "auroc": 0.8801652892561983,
+                "auprc": 0.8513553113553113,
+                "auroc_ci95": [
+                  0.8229166666666666,
+                  1.0
+                ],
+                "auprc_ci95": [
+                  0.5625,
+                  1.0
+                ],
+                "valid_rounds": 4967
+              }
+            },
+            "paired_differences": {
+              "native_support_loss minus full_conditional_logprob_loss": {
+                "delta_auroc": -0.1652892561983471,
+                "ci95": [
+                  -0.375,
+                  0.0
+                ]
+              }
+            },
+            "low_event_warning": false,
+            "ci_note": "Few observed events can yield degenerate bootstrap intervals; they do not establish generalization.",
+            "missing_window": 0
+          },
+          "answer": {
+            "n": 33,
+            "positives": 11,
+            "groups": 4,
+            "positive_rate": 0.3333333333333333,
+            "metrics": {
+              "native_support_loss": {
+                "auroc": 0.7024793388429752,
+                "auprc": 0.6687437338647015,
+                "auroc_ci95": [
+                  0.484375,
+                  1.0
+                ],
+                "auprc_ci95": [
+                  0.2375,
+                  1.0
+                ],
+                "valid_rounds": 4967
+              },
+              "full_conditional_logprob_loss": {
+                "auroc": 0.9917355371900827,
+                "auprc": 0.986013986013986,
+                "auroc_ci95": [
+                  0.984375,
+                  1.0
+                ],
+                "auprc_ci95": [
+                  0.95,
+                  1.0
+                ],
+                "valid_rounds": 4967
+              }
+            },
+            "paired_differences": {
+              "native_support_loss minus full_conditional_logprob_loss": {
+                "delta_auroc": -0.2892561983471075,
+                "ci95": [
+                  -0.5,
+                  0.0
+                ]
+              }
+            },
+            "low_event_warning": false,
+            "ci_note": "Few observed events can yield degenerate bootstrap intervals; they do not establish generalization.",
+            "missing_window": 0
+          },
+          "explanation": {
+            "n": 33,
+            "positives": 11,
+            "groups": 4,
+            "positive_rate": 0.3333333333333333,
+            "metrics": {
+              "native_support_loss": {
+                "auroc": 0.7107438016528925,
+                "auprc": 0.6251181593247402,
+                "auroc_ci95": [
+                  0.4875,
+                  1.0
+                ],
+                "auprc_ci95": [
+                  0.24278499278499277,
+                  1.0
+                ],
+                "valid_rounds": 4967
+              },
+              "full_conditional_logprob_loss": {
+                "auroc": 0.7933884297520661,
+                "auprc": 0.7083635662583031,
+                "auroc_ci95": [
+                  0.671875,
+                  0.9285714285714286
+                ],
+                "auprc_ci95": [
+                  0.3254349816849817,
+                  0.9412087912087912
+                ],
+                "valid_rounds": 4967
+              }
+            },
+            "paired_differences": {
+              "native_support_loss minus full_conditional_logprob_loss": {
+                "delta_auroc": -0.08264462809917361,
+                "ci95": [
+                  -0.3125,
+                  0.16666666666666663
+                ]
+              }
+            },
+            "low_event_warning": false,
+            "ci_note": "Few observed events can yield degenerate bootstrap intervals; they do not establish generalization.",
+            "missing_window": 0
+          }
+        },
+        "topics": {
+          "Animals": {
+            "all_content": {
+              "n": 0,
+              "positives": 0,
+              "groups": 0,
+              "metrics": {},
+              "note": "single class or empty cohort"
+            },
+            "answer": {
+              "n": 0,
+              "positives": 0,
+              "groups": 0,
+              "metrics": {},
+              "note": "single class or empty cohort"
+            },
+            "explanation": {
+              "n": 0,
+              "positives": 0,
+              "groups": 0,
+              "metrics": {},
+              "note": "single class or empty cohort"
+            }
+          },
+          "Chess Pieces": {
+            "all_content": {
+              "n": 0,
+              "positives": 0,
+              "groups": 0,
+              "metrics": {},
+              "note": "single class or empty cohort"
+            },
+            "answer": {
+              "n": 0,
+              "positives": 0,
+              "groups": 0,
+              "metrics": {},
+              "note": "single class or empty cohort"
+            },
+            "explanation": {
+              "n": 0,
+              "positives": 0,
+              "groups": 0,
+              "metrics": {},
+              "note": "single class or empty cohort"
+            }
+          },
+          "Flags": {
+            "all_content": {
+              "n": 10,
+              "positives": 4,
+              "groups": 1,
+              "positive_rate": 0.4,
+              "metrics": {
+                "native_support_loss": {
+                  "auroc": 0.7916666666666666,
+                  "auprc": 0.7333333333333333,
+                  "auroc_ci95": [
+                    0.7916666666666666,
+                    0.7916666666666666
+                  ],
+                  "auprc_ci95": [
+                    0.7333333333333333,
+                    0.7333333333333333
+                  ],
+                  "valid_rounds": 5000
+                },
+                "full_conditional_logprob_loss": {
+                  "auroc": 1.0,
+                  "auprc": 1.0,
+                  "auroc_ci95": [
+                    1.0,
+                    1.0
+                  ],
+                  "auprc_ci95": [
+                    1.0,
+                    1.0
+                  ],
+                  "valid_rounds": 5000
+                }
+              },
+              "paired_differences": {
+                "native_support_loss minus full_conditional_logprob_loss": {
+                  "delta_auroc": -0.20833333333333337,
+                  "ci95": [
+                    -0.20833333333333337,
+                    -0.20833333333333337
+                  ]
+                }
+              },
+              "low_event_warning": true,
+              "ci_note": "Few observed events can yield degenerate bootstrap intervals; they do not establish generalization."
+            },
+            "answer": {
+              "n": 10,
+              "positives": 4,
+              "groups": 1,
+              "positive_rate": 0.4,
+              "metrics": {
+                "native_support_loss": {
+                  "auroc": 0.7083333333333334,
+                  "auprc": 0.7152777777777777,
+                  "auroc_ci95": [
+                    0.7083333333333334,
+                    0.7083333333333334
+                  ],
+                  "auprc_ci95": [
+                    0.7152777777777777,
+                    0.7152777777777777
+                  ],
+                  "valid_rounds": 5000
+                },
+                "full_conditional_logprob_loss": {
+                  "auroc": 1.0,
+                  "auprc": 1.0,
+                  "auroc_ci95": [
+                    1.0,
+                    1.0
+                  ],
+                  "auprc_ci95": [
+                    1.0,
+                    1.0
+                  ],
+                  "valid_rounds": 5000
+                }
+              },
+              "paired_differences": {
+                "native_support_loss minus full_conditional_logprob_loss": {
+                  "delta_auroc": -0.29166666666666663,
+                  "ci95": [
+                    -0.29166666666666663,
+                    -0.29166666666666663
+                  ]
+                }
+              },
+              "low_event_warning": true,
+              "ci_note": "Few observed events can yield degenerate bootstrap intervals; they do not establish generalization."
+            },
+            "explanation": {
+              "n": 10,
+              "positives": 4,
+              "groups": 1,
+              "positive_rate": 0.4,
+              "metrics": {
+                "native_support_loss": {
+                  "auroc": 0.7916666666666666,
+                  "auprc": 0.7333333333333333,
+                  "auroc_ci95": [
+                    0.7916666666666666,
+                    0.7916666666666666
+                  ],
+                  "auprc_ci95": [
+                    0.7333333333333333,
+                    0.7333333333333333
+                  ],
+                  "valid_rounds": 5000
+                },
+                "full_conditional_logprob_loss": {
+                  "auroc": 0.875,
+                  "auprc": 0.8041666666666667,
+                  "auroc_ci95": [
+                    0.875,
+                    0.875
+                  ],
+                  "auprc_ci95": [
+                    0.8041666666666667,
+                    0.8041666666666667
+                  ],
+                  "valid_rounds": 5000
+                }
+              },
+              "paired_differences": {
+                "native_support_loss minus full_conditional_logprob_loss": {
+                  "delta_auroc": -0.08333333333333337,
+                  "ci95": [
+                    -0.08333333333333337,
+                    -0.08333333333333337
+                  ]
+                }
+              },
+              "low_event_warning": true,
+              "ci_note": "Few observed events can yield degenerate bootstrap intervals; they do not establish generalization."
+            }
+          },
+          "Game Boards": {
+            "all_content": {
+              "n": 2,
+              "positives": 0,
+              "groups": 1,
+              "metrics": {},
+              "note": "single class or empty cohort"
+            },
+            "answer": {
+              "n": 2,
+              "positives": 0,
+              "groups": 1,
+              "metrics": {},
+              "note": "single class or empty cohort"
+            },
+            "explanation": {
+              "n": 2,
+              "positives": 0,
+              "groups": 1,
+              "metrics": {},
+              "note": "single class or empty cohort"
+            }
+          },
+          "Logos": {
+            "all_content": {
+              "n": 0,
+              "positives": 0,
+              "groups": 0,
+              "metrics": {},
+              "note": "single class or empty cohort"
+            },
+            "answer": {
+              "n": 0,
+              "positives": 0,
+              "groups": 0,
+              "metrics": {},
+              "note": "single class or empty cohort"
+            },
+            "explanation": {
+              "n": 0,
+              "positives": 0,
+              "groups": 0,
+              "metrics": {},
+              "note": "single class or empty cohort"
+            }
+          },
+          "Optical Illusion": {
+            "all_content": {
+              "n": 18,
+              "positives": 4,
+              "groups": 1,
+              "positive_rate": 0.2222222222222222,
+              "metrics": {
+                "native_support_loss": {
+                  "auroc": 0.6964285714285714,
+                  "auprc": 0.36041666666666666,
+                  "auroc_ci95": [
+                    0.6964285714285714,
+                    0.6964285714285714
+                  ],
+                  "auprc_ci95": [
+                    0.36041666666666666,
+                    0.36041666666666666
+                  ],
+                  "valid_rounds": 5000
+                },
+                "full_conditional_logprob_loss": {
+                  "auroc": 0.8928571428571429,
+                  "auprc": 0.85,
+                  "auroc_ci95": [
+                    0.8928571428571429,
+                    0.8928571428571429
+                  ],
+                  "auprc_ci95": [
+                    0.85,
+                    0.85
+                  ],
+                  "valid_rounds": 5000
+                }
+              },
+              "paired_differences": {
+                "native_support_loss minus full_conditional_logprob_loss": {
+                  "delta_auroc": -0.1964285714285715,
+                  "ci95": [
+                    -0.1964285714285715,
+                    -0.1964285714285715
+                  ]
+                }
+              },
+              "low_event_warning": true,
+              "ci_note": "Few observed events can yield degenerate bootstrap intervals; they do not establish generalization."
+            },
+            "answer": {
+              "n": 18,
+              "positives": 4,
+              "groups": 1,
+              "positive_rate": 0.2222222222222222,
+              "metrics": {
+                "native_support_loss": {
+                  "auroc": 0.5,
+                  "auprc": 0.270734126984127,
+                  "auroc_ci95": [
+                    0.5,
+                    0.5
+                  ],
+                  "auprc_ci95": [
+                    0.270734126984127,
+                    0.270734126984127
+                  ],
+                  "valid_rounds": 5000
+                },
+                "full_conditional_logprob_loss": {
+                  "auroc": 0.9821428571428571,
+                  "auprc": 0.95,
+                  "auroc_ci95": [
+                    0.9821428571428571,
+                    0.9821428571428571
+                  ],
+                  "auprc_ci95": [
+                    0.95,
+                    0.95
+                  ],
+                  "valid_rounds": 5000
+                }
+              },
+              "paired_differences": {
+                "native_support_loss minus full_conditional_logprob_loss": {
+                  "delta_auroc": -0.4821428571428571,
+                  "ci95": [
+                    -0.4821428571428571,
+                    -0.4821428571428571
+                  ]
+                }
+              },
+              "low_event_warning": true,
+              "ci_note": "Few observed events can yield degenerate bootstrap intervals; they do not establish generalization."
+            },
+            "explanation": {
+              "n": 18,
+              "positives": 4,
+              "groups": 1,
+              "positive_rate": 0.2222222222222222,
+              "metrics": {
+                "native_support_loss": {
+                  "auroc": 0.6964285714285714,
+                  "auprc": 0.36041666666666666,
+                  "auroc_ci95": [
+                    0.6964285714285714,
+                    0.6964285714285714
+                  ],
+                  "auprc_ci95": [
+                    0.36041666666666666,
+                    0.36041666666666666
+                  ],
+                  "valid_rounds": 5000
+                },
+                "full_conditional_logprob_loss": {
+                  "auroc": 0.7678571428571429,
+                  "auprc": 0.5659090909090909,
+                  "auroc_ci95": [
+                    0.7678571428571429,
+                    0.7678571428571429
+                  ],
+                  "auprc_ci95": [
+                    0.5659090909090909,
+                    0.5659090909090909
+                  ],
+                  "valid_rounds": 5000
+                }
+              },
+              "paired_differences": {
+                "native_support_loss minus full_conditional_logprob_loss": {
+                  "delta_auroc": -0.07142857142857151,
+                  "ci95": [
+                    -0.07142857142857151,
+                    -0.07142857142857151
+                  ]
+                }
+              },
+              "low_event_warning": true,
+              "ci_note": "Few observed events can yield degenerate bootstrap intervals; they do not establish generalization."
+            }
+          },
+          "Patterned Grid": {
+            "all_content": {
+              "n": 3,
+              "positives": 3,
+              "groups": 1,
+              "metrics": {},
+              "note": "single class or empty cohort"
+            },
+            "answer": {
+              "n": 3,
+              "positives": 3,
+              "groups": 1,
+              "metrics": {},
+              "note": "single class or empty cohort"
+            },
+            "explanation": {
+              "n": 3,
+              "positives": 3,
+              "groups": 1,
+              "metrics": {},
+              "note": "single class or empty cohort"
+            }
+          }
+        }
+      },
+      "prefix": {
+        "behavior_effect": {
+          "n": 210,
+          "groups": 7,
+          "mean": 0.2904761904761905,
+          "ci95": [
+            0.19047619047619047,
+            0.3952380952380952
+          ],
+          "bootstrap": "paired topic-cluster; 5000 draws"
+        },
+        "windows": {
+          "all_content": {
+            "n": 24,
+            "positives": 13,
+            "groups": 4,
+            "positive_rate": 0.5416666666666666,
+            "metrics": {
+              "native_support_loss": {
+                "auroc": 0.5314685314685315,
+                "auprc": 0.6580987899131713,
+                "auroc_ci95": [
+                  0.4,
+                  1.0
+                ],
+                "auprc_ci95": [
+                  0.5062560590424366,
+                  1.0
+                ],
+                "valid_rounds": 4968
+              },
+              "full_conditional_logprob_loss": {
+                "auroc": 0.7482517482517482,
+                "auprc": 0.7206024969182864,
+                "auroc_ci95": [
+                  0.0,
+                  1.0
+                ],
+                "auprc_ci95": [
+                  0.41666666666666663,
+                  1.0
+                ],
+                "valid_rounds": 4968
+              }
+            },
+            "paired_differences": {
+              "native_support_loss minus full_conditional_logprob_loss": {
+                "delta_auroc": -0.21678321678321677,
+                "ci95": [
+                  -0.375,
+                  1.0
+                ]
+              }
+            },
+            "low_event_warning": false,
+            "ci_note": "Few observed events can yield degenerate bootstrap intervals; they do not establish generalization.",
+            "missing_window": 0
+          },
+          "answer": {
+            "n": 24,
+            "positives": 13,
+            "groups": 4,
+            "positive_rate": 0.5416666666666666,
+            "metrics": {
+              "native_support_loss": {
+                "auroc": 0.5174825174825175,
+                "auprc": 0.6236062469186039,
+                "auroc_ci95": [
+                  0.43,
+                  1.0
+                ],
+                "auprc_ci95": [
+                  0.45840538847117795,
+                  1.0
+                ],
+                "valid_rounds": 4968
+              },
+              "full_conditional_logprob_loss": {
+                "auroc": 0.7902097902097902,
+                "auprc": 0.8951631701631702,
+                "auroc_ci95": [
+                  0.0,
+                  1.0
+                ],
+                "auprc_ci95": [
+                  0.5,
+                  1.0
+                ],
+                "valid_rounds": 4968
+              }
+            },
+            "paired_differences": {
+              "native_support_loss minus full_conditional_logprob_loss": {
+                "delta_auroc": -0.2727272727272727,
+                "ci95": [
+                  -0.5700000000000001,
+                  1.0
+                ]
+              }
+            },
+            "low_event_warning": false,
+            "ci_note": "Few observed events can yield degenerate bootstrap intervals; they do not establish generalization.",
+            "missing_window": 0
+          },
+          "explanation": {
+            "n": 24,
+            "positives": 13,
+            "groups": 4,
+            "positive_rate": 0.5416666666666666,
+            "metrics": {
+              "native_support_loss": {
+                "auroc": 0.5314685314685315,
+                "auprc": 0.6580987899131713,
+                "auroc_ci95": [
+                  0.4,
+                  1.0
+                ],
+                "auprc_ci95": [
+                  0.5062560590424366,
+                  1.0
+                ],
+                "valid_rounds": 4968
+              },
+              "full_conditional_logprob_loss": {
+                "auroc": 0.6363636363636364,
+                "auprc": 0.6487883919149904,
+                "auroc_ci95": [
+                  0.0,
+                  1.0
+                ],
+                "auprc_ci95": [
+                  0.41666666666666663,
+                  1.0
+                ],
+                "valid_rounds": 4968
+              }
+            },
+            "paired_differences": {
+              "native_support_loss minus full_conditional_logprob_loss": {
+                "delta_auroc": -0.1048951048951049,
+                "ci95": [
+                  -0.20357142857142863,
+                  1.0
+                ]
+              }
+            },
+            "low_event_warning": false,
+            "ci_note": "Few observed events can yield degenerate bootstrap intervals; they do not establish generalization.",
+            "missing_window": 0
+          }
+        },
+        "topics": {
+          "Animals": {
+            "all_content": {
+              "n": 0,
+              "positives": 0,
+              "groups": 0,
+              "metrics": {},
+              "note": "single class or empty cohort"
+            },
+            "answer": {
+              "n": 0,
+              "positives": 0,
+              "groups": 0,
+              "metrics": {},
+              "note": "single class or empty cohort"
+            },
+            "explanation": {
+              "n": 0,
+              "positives": 0,
+              "groups": 0,
+              "metrics": {},
+              "note": "single class or empty cohort"
+            }
+          },
+          "Chess Pieces": {
+            "all_content": {
+              "n": 0,
+              "positives": 0,
+              "groups": 0,
+              "metrics": {},
+              "note": "single class or empty cohort"
+            },
+            "answer": {
+              "n": 0,
+              "positives": 0,
+              "groups": 0,
+              "metrics": {},
+              "note": "single class or empty cohort"
+            },
+            "explanation": {
+              "n": 0,
+              "positives": 0,
+              "groups": 0,
+              "metrics": {},
+              "note": "single class or empty cohort"
+            }
+          },
+          "Flags": {
+            "all_content": {
+              "n": 1,
+              "positives": 0,
+              "groups": 1,
+              "metrics": {},
+              "note": "single class or empty cohort"
+            },
+            "answer": {
+              "n": 1,
+              "positives": 0,
+              "groups": 1,
+              "metrics": {},
+              "note": "single class or empty cohort"
+            },
+            "explanation": {
+              "n": 1,
+              "positives": 0,
+              "groups": 1,
+              "metrics": {},
+              "note": "single class or empty cohort"
+            }
+          },
+          "Game Boards": {
+            "all_content": {
+              "n": 3,
+              "positives": 2,
+              "groups": 1,
+              "positive_rate": 0.6666666666666666,
+              "metrics": {
+                "native_support_loss": {
+                  "auroc": 1.0,
+                  "auprc": 1.0,
+                  "auroc_ci95": [
+                    1.0,
+                    1.0
+                  ],
+                  "auprc_ci95": [
+                    1.0,
+                    1.0
+                  ],
+                  "valid_rounds": 5000
+                },
+                "full_conditional_logprob_loss": {
+                  "auroc": 0.0,
+                  "auprc": 0.5833333333333333,
+                  "auroc_ci95": [
+                    0.0,
+                    0.0
+                  ],
+                  "auprc_ci95": [
+                    0.5833333333333333,
+                    0.5833333333333333
+                  ],
+                  "valid_rounds": 5000
+                }
+              },
+              "paired_differences": {
+                "native_support_loss minus full_conditional_logprob_loss": {
+                  "delta_auroc": 1.0,
+                  "ci95": [
+                    1.0,
+                    1.0
+                  ]
+                }
+              },
+              "low_event_warning": true,
+              "ci_note": "Few observed events can yield degenerate bootstrap intervals; they do not establish generalization."
+            },
+            "answer": {
+              "n": 3,
+              "positives": 2,
+              "groups": 1,
+              "positive_rate": 0.6666666666666666,
+              "metrics": {
+                "native_support_loss": {
+                  "auroc": 0.5,
+                  "auprc": 0.8333333333333333,
+                  "auroc_ci95": [
+                    0.5,
+                    0.5
+                  ],
+                  "auprc_ci95": [
+                    0.8333333333333333,
+                    0.8333333333333333
+                  ],
+                  "valid_rounds": 5000
+                },
+                "full_conditional_logprob_loss": {
+                  "auroc": 0.5,
+                  "auprc": 0.8333333333333333,
+                  "auroc_ci95": [
+                    0.5,
+                    0.5
+                  ],
+                  "auprc_ci95": [
+                    0.8333333333333333,
+                    0.8333333333333333
+                  ],
+                  "valid_rounds": 5000
+                }
+              },
+              "paired_differences": {
+                "native_support_loss minus full_conditional_logprob_loss": {
+                  "delta_auroc": 0.0,
+                  "ci95": [
+                    0.0,
+                    0.0
+                  ]
+                }
+              },
+              "low_event_warning": true,
+              "ci_note": "Few observed events can yield degenerate bootstrap intervals; they do not establish generalization."
+            },
+            "explanation": {
+              "n": 3,
+              "positives": 2,
+              "groups": 1,
+              "positive_rate": 0.6666666666666666,
+              "metrics": {
+                "native_support_loss": {
+                  "auroc": 1.0,
+                  "auprc": 1.0,
+                  "auroc_ci95": [
+                    1.0,
+                    1.0
+                  ],
+                  "auprc_ci95": [
+                    1.0,
+                    1.0
+                  ],
+                  "valid_rounds": 5000
+                },
+                "full_conditional_logprob_loss": {
+                  "auroc": 0.0,
+                  "auprc": 0.5833333333333333,
+                  "auroc_ci95": [
+                    0.0,
+                    0.0
+                  ],
+                  "auprc_ci95": [
+                    0.5833333333333333,
+                    0.5833333333333333
+                  ],
+                  "valid_rounds": 5000
+                }
+              },
+              "paired_differences": {
+                "native_support_loss minus full_conditional_logprob_loss": {
+                  "delta_auroc": 1.0,
+                  "ci95": [
+                    1.0,
+                    1.0
+                  ]
+                }
+              },
+              "low_event_warning": true,
+              "ci_note": "Few observed events can yield degenerate bootstrap intervals; they do not establish generalization."
+            }
+          },
+          "Logos": {
+            "all_content": {
+              "n": 0,
+              "positives": 0,
+              "groups": 0,
+              "metrics": {},
+              "note": "single class or empty cohort"
+            },
+            "answer": {
+              "n": 0,
+              "positives": 0,
+              "groups": 0,
+              "metrics": {},
+              "note": "single class or empty cohort"
+            },
+            "explanation": {
+              "n": 0,
+              "positives": 0,
+              "groups": 0,
+              "metrics": {},
+              "note": "single class or empty cohort"
+            }
+          },
+          "Optical Illusion": {
+            "all_content": {
+              "n": 19,
+              "positives": 10,
+              "groups": 1,
+              "positive_rate": 0.5263157894736842,
+              "metrics": {
+                "native_support_loss": {
+                  "auroc": 0.4888888888888889,
+                  "auprc": 0.6268883404177521,
+                  "auroc_ci95": [
+                    0.4888888888888889,
+                    0.4888888888888889
+                  ],
+                  "auprc_ci95": [
+                    0.6268883404177521,
+                    0.6268883404177521
+                  ],
+                  "valid_rounds": 5000
+                },
+                "full_conditional_logprob_loss": {
+                  "auroc": 0.8777777777777778,
+                  "auprc": 0.8967388167388167,
+                  "auroc_ci95": [
+                    0.8777777777777778,
+                    0.8777777777777778
+                  ],
+                  "auprc_ci95": [
+                    0.8967388167388167,
+                    0.8967388167388167
+                  ],
+                  "valid_rounds": 5000
+                }
+              },
+              "paired_differences": {
+                "native_support_loss minus full_conditional_logprob_loss": {
+                  "delta_auroc": -0.3888888888888889,
+                  "ci95": [
+                    -0.3888888888888889,
+                    -0.3888888888888889
+                  ]
+                }
+              },
+              "low_event_warning": true,
+              "ci_note": "Few observed events can yield degenerate bootstrap intervals; they do not establish generalization."
+            },
+            "answer": {
+              "n": 19,
+              "positives": 10,
+              "groups": 1,
+              "positive_rate": 0.5263157894736842,
+              "metrics": {
+                "native_support_loss": {
+                  "auroc": 0.4777777777777778,
+                  "auprc": 0.5087884337884337,
+                  "auroc_ci95": [
+                    0.4777777777777778,
+                    0.4777777777777778
+                  ],
+                  "auprc_ci95": [
+                    0.5087884337884337,
+                    0.5087884337884337
+                  ],
+                  "valid_rounds": 5000
+                },
+                "full_conditional_logprob_loss": {
+                  "auroc": 1.0,
+                  "auprc": 1.0,
+                  "auroc_ci95": [
+                    1.0,
+                    1.0
+                  ],
+                  "auprc_ci95": [
+                    1.0,
+                    1.0
+                  ],
+                  "valid_rounds": 5000
+                }
+              },
+              "paired_differences": {
+                "native_support_loss minus full_conditional_logprob_loss": {
+                  "delta_auroc": -0.5222222222222221,
+                  "ci95": [
+                    -0.5222222222222221,
+                    -0.5222222222222221
+                  ]
+                }
+              },
+              "low_event_warning": true,
+              "ci_note": "Few observed events can yield degenerate bootstrap intervals; they do not establish generalization."
+            },
+            "explanation": {
+              "n": 19,
+              "positives": 10,
+              "groups": 1,
+              "positive_rate": 0.5263157894736842,
+              "metrics": {
+                "native_support_loss": {
+                  "auroc": 0.4888888888888889,
+                  "auprc": 0.6268883404177521,
+                  "auroc_ci95": [
+                    0.4888888888888889,
+                    0.4888888888888889
+                  ],
+                  "auprc_ci95": [
+                    0.6268883404177521,
+                    0.6268883404177521
+                  ],
+                  "valid_rounds": 5000
+                },
+                "full_conditional_logprob_loss": {
+                  "auroc": 0.7,
+                  "auprc": 0.6697113997113997,
+                  "auroc_ci95": [
+                    0.7,
+                    0.7
+                  ],
+                  "auprc_ci95": [
+                    0.6697113997113997,
+                    0.6697113997113997
+                  ],
+                  "valid_rounds": 5000
+                }
+              },
+              "paired_differences": {
+                "native_support_loss minus full_conditional_logprob_loss": {
+                  "delta_auroc": -0.21111111111111108,
+                  "ci95": [
+                    -0.21111111111111108,
+                    -0.21111111111111108
+                  ]
+                }
+              },
+              "low_event_warning": true,
+              "ci_note": "Few observed events can yield degenerate bootstrap intervals; they do not establish generalization."
+            }
+          },
+          "Patterned Grid": {
+            "all_content": {
+              "n": 1,
+              "positives": 1,
+              "groups": 1,
+              "metrics": {},
+              "note": "single class or empty cohort"
+            },
+            "answer": {
+              "n": 1,
+              "positives": 1,
+              "groups": 1,
+              "metrics": {},
+              "note": "single class or empty cohort"
+            },
+            "explanation": {
+              "n": 1,
+              "positives": 1,
+              "groups": 1,
+              "metrics": {},
+              "note": "single class or empty cohort"
+            }
+          }
+        }
+      }
+    }
+  },
+  "32b": {
+    "max_reconstruction_error": 5.684341886080802e-14,
+    "protocol": "Posthoc unified consistent-brace/first-line partition; all three models, both interventions, all windows retained",
+    "kinds": {
+      "question": {
+        "behavior_effect": {
+          "n": 210,
+          "groups": 7,
+          "mean": 0.2,
+          "ci95": [
+            0.06190476190476191,
+            0.3523809523809524
+          ],
+          "bootstrap": "paired topic-cluster; 5000 draws"
+        },
+        "windows": {
+          "all_content": {
+            "n": 49,
+            "positives": 28,
+            "groups": 6,
+            "positive_rate": 0.5714285714285714,
+            "metrics": {
+              "native_support_loss": {
+                "auroc": 0.6836734693877551,
+                "auprc": 0.7605128263371019,
+                "auroc_ci95": [
+                  0.5333333333333333,
+                  0.7619047619047619
+                ],
+                "auprc_ci95": [
+                  0.43003367003367,
+                  0.9173093681917212
+                ],
+                "valid_rounds": 5000
+              },
+              "full_conditional_logprob_loss": {
+                "auroc": 0.5544217687074829,
+                "auprc": 0.6376557240699599,
+                "auroc_ci95": [
+                  0.3888888888888889,
+                  0.7
+                ],
+                "auprc_ci95": [
+                  0.298436768854686,
+                  0.8705404304892796
+                ],
+                "valid_rounds": 5000
+              }
+            },
+            "paired_differences": {
+              "native_support_loss minus full_conditional_logprob_loss": {
+                "delta_auroc": 0.12925170068027214,
+                "ci95": [
+                  -0.004201680672269004,
+                  0.18518518518518512
+                ]
+              }
+            },
+            "low_event_warning": false,
+            "ci_note": "Few observed events can yield degenerate bootstrap intervals; they do not establish generalization.",
+            "missing_window": 0
+          },
+          "answer": {
+            "n": 49,
+            "positives": 28,
+            "groups": 6,
+            "positive_rate": 0.5714285714285714,
+            "metrics": {
+              "native_support_loss": {
+                "auroc": 0.8129251700680272,
+                "auprc": 0.845402468554238,
+                "auroc_ci95": [
+                  0.6243386243386243,
+                  0.9753086419753086
+                ],
+                "auprc_ci95": [
+                  0.5931345071050953,
+                  0.9914167194259788
+                ],
+                "valid_rounds": 5000
+              },
+              "full_conditional_logprob_loss": {
+                "auroc": 1.0,
+                "auprc": 1.0,
+                "auroc_ci95": [
+                  1.0,
+                  1.0
+                ],
+                "auprc_ci95": [
+                  1.0,
+                  1.0
+                ],
+                "valid_rounds": 5000
+              }
+            },
+            "paired_differences": {
+              "native_support_loss minus full_conditional_logprob_loss": {
+                "delta_auroc": -0.18707482993197277,
+                "ci95": [
+                  -0.3756613756613757,
+                  -0.024691358024691357
+                ]
+              }
+            },
+            "low_event_warning": false,
+            "ci_note": "Few observed events can yield degenerate bootstrap intervals; they do not establish generalization.",
+            "missing_window": 0
+          },
+          "explanation": {
+            "n": 49,
+            "positives": 28,
+            "groups": 6,
+            "positive_rate": 0.5714285714285714,
+            "metrics": {
+              "native_support_loss": {
+                "auroc": 0.6819727891156463,
+                "auprc": 0.7590684986060096,
+                "auroc_ci95": [
+                  0.5333333333333333,
+                  0.7597402597402597
+                ],
+                "auprc_ci95": [
+                  0.43003367003367,
+                  0.9173093681917212
+                ],
+                "valid_rounds": 5000
+              },
+              "full_conditional_logprob_loss": {
+                "auroc": 0.45408163265306123,
+                "auprc": 0.5775812067084157,
+                "auroc_ci95": [
+                  0.20238095238095238,
+                  0.5909090909090909
+                ],
+                "auprc_ci95": [
+                  0.22451229205261464,
+                  0.8409684332761256
+                ],
+                "valid_rounds": 5000
+              }
+            },
+            "paired_differences": {
+              "native_support_loss minus full_conditional_logprob_loss": {
+                "delta_auroc": 0.22789115646258506,
+                "ci95": [
+                  0.12142857142857144,
+                  0.4258373205741627
+                ]
+              }
+            },
+            "low_event_warning": false,
+            "ci_note": "Few observed events can yield degenerate bootstrap intervals; they do not establish generalization.",
+            "missing_window": 0
+          }
+        },
+        "topics": {
+          "Animals": {
+            "all_content": {
+              "n": 1,
+              "positives": 0,
+              "groups": 1,
+              "metrics": {},
+              "note": "single class or empty cohort"
+            },
+            "answer": {
+              "n": 1,
+              "positives": 0,
+              "groups": 1,
+              "metrics": {},
+              "note": "single class or empty cohort"
+            },
+            "explanation": {
+              "n": 1,
+              "positives": 0,
+              "groups": 1,
+              "metrics": {},
+              "note": "single class or empty cohort"
+            }
+          },
+          "Chess Pieces": {
+            "all_content": {
+              "n": 0,
+              "positives": 0,
+              "groups": 0,
+              "metrics": {},
+              "note": "single class or empty cohort"
+            },
+            "answer": {
+              "n": 0,
+              "positives": 0,
+              "groups": 0,
+              "metrics": {},
+              "note": "single class or empty cohort"
+            },
+            "explanation": {
+              "n": 0,
+              "positives": 0,
+              "groups": 0,
+              "metrics": {},
+              "note": "single class or empty cohort"
+            }
+          },
+          "Flags": {
+            "all_content": {
+              "n": 10,
+              "positives": 1,
+              "groups": 1,
+              "positive_rate": 0.1,
+              "metrics": {
+                "native_support_loss": {
+                  "auroc": 0.4444444444444444,
+                  "auprc": 0.16666666666666666,
+                  "auroc_ci95": [
+                    0.4444444444444444,
+                    0.4444444444444444
+                  ],
+                  "auprc_ci95": [
+                    0.16666666666666666,
+                    0.16666666666666666
+                  ],
+                  "valid_rounds": 5000
+                },
+                "full_conditional_logprob_loss": {
+                  "auroc": 0.3333333333333333,
+                  "auprc": 0.14285714285714285,
+                  "auroc_ci95": [
+                    0.3333333333333333,
+                    0.3333333333333333
+                  ],
+                  "auprc_ci95": [
+                    0.14285714285714285,
+                    0.14285714285714285
+                  ],
+                  "valid_rounds": 5000
+                }
+              },
+              "paired_differences": {
+                "native_support_loss minus full_conditional_logprob_loss": {
+                  "delta_auroc": 0.1111111111111111,
+                  "ci95": [
+                    0.1111111111111111,
+                    0.1111111111111111
+                  ]
+                }
+              },
+              "low_event_warning": true,
+              "ci_note": "Few observed events can yield degenerate bootstrap intervals; they do not establish generalization."
+            },
+            "answer": {
+              "n": 10,
+              "positives": 1,
+              "groups": 1,
+              "positive_rate": 0.1,
+              "metrics": {
+                "native_support_loss": {
+                  "auroc": 0.8888888888888888,
+                  "auprc": 0.5,
+                  "auroc_ci95": [
+                    0.8888888888888888,
+                    0.8888888888888888
+                  ],
+                  "auprc_ci95": [
+                    0.5,
+                    0.5
+                  ],
+                  "valid_rounds": 5000
+                },
+                "full_conditional_logprob_loss": {
+                  "auroc": 1.0,
+                  "auprc": 1.0,
+                  "auroc_ci95": [
+                    1.0,
+                    1.0
+                  ],
+                  "auprc_ci95": [
+                    1.0,
+                    1.0
+                  ],
+                  "valid_rounds": 5000
+                }
+              },
+              "paired_differences": {
+                "native_support_loss minus full_conditional_logprob_loss": {
+                  "delta_auroc": -0.11111111111111116,
+                  "ci95": [
+                    -0.11111111111111116,
+                    -0.11111111111111116
+                  ]
+                }
+              },
+              "low_event_warning": true,
+              "ci_note": "Few observed events can yield degenerate bootstrap intervals; they do not establish generalization."
+            },
+            "explanation": {
+              "n": 10,
+              "positives": 1,
+              "groups": 1,
+              "positive_rate": 0.1,
+              "metrics": {
+                "native_support_loss": {
+                  "auroc": 0.4444444444444444,
+                  "auprc": 0.16666666666666666,
+                  "auroc_ci95": [
+                    0.4444444444444444,
+                    0.4444444444444444
+                  ],
+                  "auprc_ci95": [
+                    0.16666666666666666,
+                    0.16666666666666666
+                  ],
+                  "valid_rounds": 5000
+                },
+                "full_conditional_logprob_loss": {
+                  "auroc": 0.2222222222222222,
+                  "auprc": 0.125,
+                  "auroc_ci95": [
+                    0.2222222222222222,
+                    0.2222222222222222
+                  ],
+                  "auprc_ci95": [
+                    0.125,
+                    0.125
+                  ],
+                  "valid_rounds": 5000
+                }
+              },
+              "paired_differences": {
+                "native_support_loss minus full_conditional_logprob_loss": {
+                  "delta_auroc": 0.2222222222222222,
+                  "ci95": [
+                    0.2222222222222222,
+                    0.2222222222222222
+                  ]
+                }
+              },
+              "low_event_warning": true,
+              "ci_note": "Few observed events can yield degenerate bootstrap intervals; they do not establish generalization."
+            }
+          },
+          "Game Boards": {
+            "all_content": {
+              "n": 2,
+              "positives": 2,
+              "groups": 1,
+              "metrics": {},
+              "note": "single class or empty cohort"
+            },
+            "answer": {
+              "n": 2,
+              "positives": 2,
+              "groups": 1,
+              "metrics": {},
+              "note": "single class or empty cohort"
+            },
+            "explanation": {
+              "n": 2,
+              "positives": 2,
+              "groups": 1,
+              "metrics": {},
+              "note": "single class or empty cohort"
+            }
+          },
+          "Logos": {
+            "all_content": {
+              "n": 4,
+              "positives": 3,
+              "groups": 1,
+              "positive_rate": 0.75,
+              "metrics": {
+                "native_support_loss": {
+                  "auroc": 0.3333333333333333,
+                  "auprc": 0.8055555555555555,
+                  "auroc_ci95": [
+                    0.3333333333333333,
+                    0.3333333333333333
+                  ],
+                  "auprc_ci95": [
+                    0.8055555555555555,
+                    0.8055555555555555
+                  ],
+                  "valid_rounds": 5000
+                },
+                "full_conditional_logprob_loss": {
+                  "auroc": 0.3333333333333333,
+                  "auprc": 0.8055555555555555,
+                  "auroc_ci95": [
+                    0.3333333333333333,
+                    0.3333333333333333
+                  ],
+                  "auprc_ci95": [
+                    0.8055555555555555,
+                    0.8055555555555555
+                  ],
+                  "valid_rounds": 5000
+                }
+              },
+              "paired_differences": {
+                "native_support_loss minus full_conditional_logprob_loss": {
+                  "delta_auroc": 0.0,
+                  "ci95": [
+                    0.0,
+                    0.0
+                  ]
+                }
+              },
+              "low_event_warning": true,
+              "ci_note": "Few observed events can yield degenerate bootstrap intervals; they do not establish generalization."
+            },
+            "answer": {
+              "n": 4,
+              "positives": 3,
+              "groups": 1,
+              "positive_rate": 0.75,
+              "metrics": {
+                "native_support_loss": {
+                  "auroc": 0.6666666666666666,
+                  "auprc": 0.9166666666666666,
+                  "auroc_ci95": [
+                    0.6666666666666666,
+                    0.6666666666666666
+                  ],
+                  "auprc_ci95": [
+                    0.9166666666666666,
+                    0.9166666666666666
+                  ],
+                  "valid_rounds": 5000
+                },
+                "full_conditional_logprob_loss": {
+                  "auroc": 1.0,
+                  "auprc": 1.0,
+                  "auroc_ci95": [
+                    1.0,
+                    1.0
+                  ],
+                  "auprc_ci95": [
+                    1.0,
+                    1.0
+                  ],
+                  "valid_rounds": 5000
+                }
+              },
+              "paired_differences": {
+                "native_support_loss minus full_conditional_logprob_loss": {
+                  "delta_auroc": -0.33333333333333337,
+                  "ci95": [
+                    -0.33333333333333337,
+                    -0.33333333333333337
+                  ]
+                }
+              },
+              "low_event_warning": true,
+              "ci_note": "Few observed events can yield degenerate bootstrap intervals; they do not establish generalization."
+            },
+            "explanation": {
+              "n": 4,
+              "positives": 3,
+              "groups": 1,
+              "positive_rate": 0.75,
+              "metrics": {
+                "native_support_loss": {
+                  "auroc": 0.3333333333333333,
+                  "auprc": 0.8055555555555555,
+                  "auroc_ci95": [
+                    0.3333333333333333,
+                    0.3333333333333333
+                  ],
+                  "auprc_ci95": [
+                    0.8055555555555555,
+                    0.8055555555555555
+                  ],
+                  "valid_rounds": 5000
+                },
+                "full_conditional_logprob_loss": {
+                  "auroc": 0.0,
+                  "auprc": 0.6388888888888888,
+                  "auroc_ci95": [
+                    0.0,
+                    0.0
+                  ],
+                  "auprc_ci95": [
+                    0.6388888888888888,
+                    0.6388888888888888
+                  ],
+                  "valid_rounds": 5000
+                }
+              },
+              "paired_differences": {
+                "native_support_loss minus full_conditional_logprob_loss": {
+                  "delta_auroc": 0.3333333333333333,
+                  "ci95": [
+                    0.3333333333333333,
+                    0.3333333333333333
+                  ]
+                }
+              },
+              "low_event_warning": true,
+              "ci_note": "Few observed events can yield degenerate bootstrap intervals; they do not establish generalization."
+            }
+          },
+          "Optical Illusion": {
+            "all_content": {
+              "n": 23,
+              "positives": 14,
+              "groups": 1,
+              "positive_rate": 0.6086956521739131,
+              "metrics": {
+                "native_support_loss": {
+                  "auroc": 0.7301587301587301,
+                  "auprc": 0.7948242442603345,
+                  "auroc_ci95": [
+                    0.7301587301587301,
+                    0.7301587301587301
+                  ],
+                  "auprc_ci95": [
+                    0.7948242442603345,
+                    0.7948242442603345
+                  ],
+                  "valid_rounds": 5000
+                },
+                "full_conditional_logprob_loss": {
+                  "auroc": 0.6031746031746031,
+                  "auprc": 0.6853401926958981,
+                  "auroc_ci95": [
+                    0.6031746031746031,
+                    0.6031746031746031
+                  ],
+                  "auprc_ci95": [
+                    0.6853401926958981,
+                    0.6853401926958981
+                  ],
+                  "valid_rounds": 5000
+                }
+              },
+              "paired_differences": {
+                "native_support_loss minus full_conditional_logprob_loss": {
+                  "delta_auroc": 0.12698412698412698,
+                  "ci95": [
+                    0.12698412698412698,
+                    0.12698412698412698
+                  ]
+                }
+              },
+              "low_event_warning": true,
+              "ci_note": "Few observed events can yield degenerate bootstrap intervals; they do not establish generalization."
+            },
+            "answer": {
+              "n": 23,
+              "positives": 14,
+              "groups": 1,
+              "positive_rate": 0.6086956521739131,
+              "metrics": {
+                "native_support_loss": {
+                  "auroc": 0.6031746031746031,
+                  "auprc": 0.639577964052754,
+                  "auroc_ci95": [
+                    0.6031746031746031,
+                    0.6031746031746031
+                  ],
+                  "auprc_ci95": [
+                    0.639577964052754,
+                    0.639577964052754
+                  ],
+                  "valid_rounds": 5000
+                },
+                "full_conditional_logprob_loss": {
+                  "auroc": 1.0,
+                  "auprc": 1.0,
+                  "auroc_ci95": [
+                    1.0,
+                    1.0
+                  ],
+                  "auprc_ci95": [
+                    1.0,
+                    1.0
+                  ],
+                  "valid_rounds": 5000
+                }
+              },
+              "paired_differences": {
+                "native_support_loss minus full_conditional_logprob_loss": {
+                  "delta_auroc": -0.39682539682539686,
+                  "ci95": [
+                    -0.39682539682539686,
+                    -0.39682539682539686
+                  ]
+                }
+              },
+              "low_event_warning": true,
+              "ci_note": "Few observed events can yield degenerate bootstrap intervals; they do not establish generalization."
+            },
+            "explanation": {
+              "n": 23,
+              "positives": 14,
+              "groups": 1,
+              "positive_rate": 0.6086956521739131,
+              "metrics": {
+                "native_support_loss": {
+                  "auroc": 0.7301587301587301,
+                  "auprc": 0.7948242442603345,
+                  "auroc_ci95": [
+                    0.7301587301587301,
+                    0.7301587301587301
+                  ],
+                  "auprc_ci95": [
+                    0.7948242442603345,
+                    0.7948242442603345
+                  ],
+                  "valid_rounds": 5000
+                },
+                "full_conditional_logprob_loss": {
+                  "auroc": 0.5,
+                  "auprc": 0.6383665753137225,
+                  "auroc_ci95": [
+                    0.5,
+                    0.5
+                  ],
+                  "auprc_ci95": [
+                    0.6383665753137225,
+                    0.6383665753137225
+                  ],
+                  "valid_rounds": 5000
+                }
+              },
+              "paired_differences": {
+                "native_support_loss minus full_conditional_logprob_loss": {
+                  "delta_auroc": 0.23015873015873012,
+                  "ci95": [
+                    0.23015873015873012,
+                    0.23015873015873012
+                  ]
+                }
+              },
+              "low_event_warning": true,
+              "ci_note": "Few observed events can yield degenerate bootstrap intervals; they do not establish generalization."
+            }
+          },
+          "Patterned Grid": {
+            "all_content": {
+              "n": 9,
+              "positives": 8,
+              "groups": 1,
+              "positive_rate": 0.8888888888888888,
+              "metrics": {
+                "native_support_loss": {
+                  "auroc": 0.5,
+                  "auprc": 0.9317956349206349,
+                  "auroc_ci95": [
+                    0.5,
+                    0.5
+                  ],
+                  "auprc_ci95": [
+                    0.9317956349206349,
+                    0.9317956349206349
+                  ],
+                  "valid_rounds": 5000
+                },
+                "full_conditional_logprob_loss": {
+                  "auroc": 0.25,
+                  "auprc": 0.875545634920635,
+                  "auroc_ci95": [
+                    0.25,
+                    0.25
+                  ],
+                  "auprc_ci95": [
+                    0.875545634920635,
+                    0.875545634920635
+                  ],
+                  "valid_rounds": 5000
+                }
+              },
+              "paired_differences": {
+                "native_support_loss minus full_conditional_logprob_loss": {
+                  "delta_auroc": 0.25,
+                  "ci95": [
+                    0.25,
+                    0.25
+                  ]
+                }
+              },
+              "low_event_warning": true,
+              "ci_note": "Few observed events can yield degenerate bootstrap intervals; they do not establish generalization."
+            },
+            "answer": {
+              "n": 9,
+              "positives": 8,
+              "groups": 1,
+              "positive_rate": 0.8888888888888888,
+              "metrics": {
+                "native_support_loss": {
+                  "auroc": 1.0,
+                  "auprc": 1.0,
+                  "auroc_ci95": [
+                    1.0,
+                    1.0
+                  ],
+                  "auprc_ci95": [
+                    1.0,
+                    1.0
+                  ],
+                  "valid_rounds": 5000
+                },
+                "full_conditional_logprob_loss": {
+                  "auroc": 1.0,
+                  "auprc": 1.0,
+                  "auroc_ci95": [
+                    1.0,
+                    1.0
+                  ],
+                  "auprc_ci95": [
+                    1.0,
+                    1.0
+                  ],
+                  "valid_rounds": 5000
+                }
+              },
+              "paired_differences": {
+                "native_support_loss minus full_conditional_logprob_loss": {
+                  "delta_auroc": 0.0,
+                  "ci95": [
+                    0.0,
+                    0.0
+                  ]
+                }
+              },
+              "low_event_warning": true,
+              "ci_note": "Few observed events can yield degenerate bootstrap intervals; they do not establish generalization."
+            },
+            "explanation": {
+              "n": 9,
+              "positives": 8,
+              "groups": 1,
+              "positive_rate": 0.8888888888888888,
+              "metrics": {
+                "native_support_loss": {
+                  "auroc": 0.5,
+                  "auprc": 0.9317956349206349,
+                  "auroc_ci95": [
+                    0.5,
+                    0.5
+                  ],
+                  "auprc_ci95": [
+                    0.9317956349206349,
+                    0.9317956349206349
+                  ],
+                  "valid_rounds": 5000
+                },
+                "full_conditional_logprob_loss": {
+                  "auroc": 0.25,
+                  "auprc": 0.875545634920635,
+                  "auroc_ci95": [
+                    0.25,
+                    0.25
+                  ],
+                  "auprc_ci95": [
+                    0.875545634920635,
+                    0.875545634920635
+                  ],
+                  "valid_rounds": 5000
+                }
+              },
+              "paired_differences": {
+                "native_support_loss minus full_conditional_logprob_loss": {
+                  "delta_auroc": 0.25,
+                  "ci95": [
+                    0.25,
+                    0.25
+                  ]
+                }
+              },
+              "low_event_warning": true,
+              "ci_note": "Few observed events can yield degenerate bootstrap intervals; they do not establish generalization."
+            }
+          }
+        }
+      },
+      "prefix": {
+        "behavior_effect": {
+          "n": 210,
+          "groups": 7,
+          "mean": 0.19523809523809524,
+          "ci95": [
+            0.06190476190476191,
+            0.3333333333333333
+          ],
+          "bootstrap": "paired topic-cluster; 5000 draws"
+        },
+        "windows": {
+          "all_content": {
+            "n": 40,
+            "positives": 20,
+            "groups": 5,
+            "positive_rate": 0.5,
+            "metrics": {
+              "native_support_loss": {
+                "auroc": 0.37,
+                "auprc": 0.41437140197029204,
+                "auroc_ci95": [
+                  0.18571428571428572,
+                  0.9722222222222222
+                ],
+                "auprc_ci95": [
+                  0.1639911618172488,
+                  0.9761904761904763
+                ],
+                "valid_rounds": 4591
+              },
+              "full_conditional_logprob_loss": {
+                "auroc": 0.34,
+                "auprc": 0.44063692327351467,
+                "auroc_ci95": [
+                  0.16917293233082706,
+                  0.7777777777777778
+                ],
+                "auprc_ci95": [
+                  0.21891204256924074,
+                  0.8000000000000002
+                ],
+                "valid_rounds": 4591
+              }
+            },
+            "paired_differences": {
+              "native_support_loss minus full_conditional_logprob_loss": {
+                "delta_auroc": 0.02999999999999997,
+                "ci95": [
+                  -0.3115942028985508,
+                  0.5306122448979591
+                ]
+              }
+            },
+            "low_event_warning": false,
+            "ci_note": "Few observed events can yield degenerate bootstrap intervals; they do not establish generalization.",
+            "missing_window": 0
+          },
+          "answer": {
+            "n": 40,
+            "positives": 20,
+            "groups": 5,
+            "positive_rate": 0.5,
+            "metrics": {
+              "native_support_loss": {
+                "auroc": 0.295,
+                "auprc": 0.42086031413175495,
+                "auroc_ci95": [
+                  0.058673469387755105,
+                  0.8333333333333334
+                ],
+                "auprc_ci95": [
+                  0.19681716621863435,
+                  0.8972222222222221
+                ],
+                "valid_rounds": 4591
+              },
+              "full_conditional_logprob_loss": {
+                "auroc": 0.6525,
+                "auprc": 0.7900149641373551,
+                "auroc_ci95": [
+                  0.09523809523809523,
+                  0.8826530612244898
+                ],
+                "auprc_ci95": [
+                  0.15084117222967156,
+                  0.9421768707482993
+                ],
+                "valid_rounds": 4591
+              }
+            },
+            "paired_differences": {
+              "native_support_loss minus full_conditional_logprob_loss": {
+                "delta_auroc": -0.3575,
+                "ci95": [
+                  -0.8239795918367347,
+                  0.75
+                ]
+              }
+            },
+            "low_event_warning": false,
+            "ci_note": "Few observed events can yield degenerate bootstrap intervals; they do not establish generalization.",
+            "missing_window": 0
+          },
+          "explanation": {
+            "n": 40,
+            "positives": 20,
+            "groups": 5,
+            "positive_rate": 0.5,
+            "metrics": {
+              "native_support_loss": {
+                "auroc": 0.3675,
+                "auprc": 0.4135692629328589,
+                "auroc_ci95": [
+                  0.18333333333333332,
+                  0.9722222222222222
+                ],
+                "auprc_ci95": [
+                  0.1639911618172488,
+                  0.9761904761904763
+                ],
+                "valid_rounds": 4591
+              },
+              "full_conditional_logprob_loss": {
+                "auroc": 0.295,
+                "auprc": 0.4274275045094841,
+                "auroc_ci95": [
+                  0.12406015037593984,
+                  0.7777777777777778
+                ],
+                "auprc_ci95": [
+                  0.20517861588123257,
+                  0.8000000000000002
+                ],
+                "valid_rounds": 4591
+              }
+            },
+            "paired_differences": {
+              "native_support_loss minus full_conditional_logprob_loss": {
+                "delta_auroc": 0.07250000000000001,
+                "ci95": [
+                  -0.3115942028985508,
+                  0.6114583333333333
+                ]
+              }
+            },
+            "low_event_warning": false,
+            "ci_note": "Few observed events can yield degenerate bootstrap intervals; they do not establish generalization.",
+            "missing_window": 0
+          }
+        },
+        "topics": {
+          "Animals": {
+            "all_content": {
+              "n": 1,
+              "positives": 0,
+              "groups": 1,
+              "metrics": {},
+              "note": "single class or empty cohort"
+            },
+            "answer": {
+              "n": 1,
+              "positives": 0,
+              "groups": 1,
+              "metrics": {},
+              "note": "single class or empty cohort"
+            },
+            "explanation": {
+              "n": 1,
+              "positives": 0,
+              "groups": 1,
+              "metrics": {},
+              "note": "single class or empty cohort"
+            }
+          },
+          "Chess Pieces": {
+            "all_content": {
+              "n": 0,
+              "positives": 0,
+              "groups": 0,
+              "metrics": {},
+              "note": "single class or empty cohort"
+            },
+            "answer": {
+              "n": 0,
+              "positives": 0,
+              "groups": 0,
+              "metrics": {},
+              "note": "single class or empty cohort"
+            },
+            "explanation": {
+              "n": 0,
+              "positives": 0,
+              "groups": 0,
+              "metrics": {},
+              "note": "single class or empty cohort"
+            }
+          },
+          "Flags": {
+            "all_content": {
+              "n": 10,
+              "positives": 0,
+              "groups": 1,
+              "metrics": {},
+              "note": "single class or empty cohort"
+            },
+            "answer": {
+              "n": 10,
+              "positives": 0,
+              "groups": 1,
+              "metrics": {},
+              "note": "single class or empty cohort"
+            },
+            "explanation": {
+              "n": 10,
+              "positives": 0,
+              "groups": 1,
+              "metrics": {},
+              "note": "single class or empty cohort"
+            }
+          },
+          "Game Boards": {
+            "all_content": {
+              "n": 2,
+              "positives": 0,
+              "groups": 1,
+              "metrics": {},
+              "note": "single class or empty cohort"
+            },
+            "answer": {
+              "n": 2,
+              "positives": 0,
+              "groups": 1,
+              "metrics": {},
+              "note": "single class or empty cohort"
+            },
+            "explanation": {
+              "n": 2,
+              "positives": 0,
+              "groups": 1,
+              "metrics": {},
+              "note": "single class or empty cohort"
+            }
+          },
+          "Logos": {
+            "all_content": {
+              "n": 0,
+              "positives": 0,
+              "groups": 0,
+              "metrics": {},
+              "note": "single class or empty cohort"
+            },
+            "answer": {
+              "n": 0,
+              "positives": 0,
+              "groups": 0,
+              "metrics": {},
+              "note": "single class or empty cohort"
+            },
+            "explanation": {
+              "n": 0,
+              "positives": 0,
+              "groups": 0,
+              "metrics": {},
+              "note": "single class or empty cohort"
+            }
+          },
+          "Optical Illusion": {
+            "all_content": {
+              "n": 20,
+              "positives": 14,
+              "groups": 1,
+              "positive_rate": 0.7,
+              "metrics": {
+                "native_support_loss": {
+                  "auroc": 0.9285714285714286,
+                  "auprc": 0.9723766429648784,
+                  "auroc_ci95": [
+                    0.9285714285714286,
+                    0.9285714285714286
+                  ],
+                  "auprc_ci95": [
+                    0.9723766429648784,
+                    0.9723766429648784
+                  ],
+                  "valid_rounds": 5000
+                },
+                "full_conditional_logprob_loss": {
+                  "auroc": 0.2619047619047619,
+                  "auprc": 0.5882814056796809,
+                  "auroc_ci95": [
+                    0.2619047619047619,
+                    0.2619047619047619
+                  ],
+                  "auprc_ci95": [
+                    0.5882814056796809,
+                    0.5882814056796809
+                  ],
+                  "valid_rounds": 5000
+                }
+              },
+              "paired_differences": {
+                "native_support_loss minus full_conditional_logprob_loss": {
+                  "delta_auroc": 0.6666666666666667,
+                  "ci95": [
+                    0.6666666666666667,
+                    0.6666666666666667
+                  ]
+                }
+              },
+              "low_event_warning": true,
+              "ci_note": "Few observed events can yield degenerate bootstrap intervals; they do not establish generalization."
+            },
+            "answer": {
+              "n": 20,
+              "positives": 14,
+              "groups": 1,
+              "positive_rate": 0.7,
+              "metrics": {
+                "native_support_loss": {
+                  "auroc": 0.27380952380952384,
+                  "auprc": 0.6670383630080667,
+                  "auroc_ci95": [
+                    0.27380952380952384,
+                    0.27380952380952384
+                  ],
+                  "auprc_ci95": [
+                    0.6670383630080667,
+                    0.6670383630080667
+                  ],
+                  "valid_rounds": 5000
+                },
+                "full_conditional_logprob_loss": {
+                  "auroc": 0.8333333333333334,
+                  "auprc": 0.9469387755102041,
+                  "auroc_ci95": [
+                    0.8333333333333334,
+                    0.8333333333333334
+                  ],
+                  "auprc_ci95": [
+                    0.9469387755102041,
+                    0.9469387755102041
+                  ],
+                  "valid_rounds": 5000
+                }
+              },
+              "paired_differences": {
+                "native_support_loss minus full_conditional_logprob_loss": {
+                  "delta_auroc": -0.5595238095238095,
+                  "ci95": [
+                    -0.5595238095238095,
+                    -0.5595238095238095
+                  ]
+                }
+              },
+              "low_event_warning": true,
+              "ci_note": "Few observed events can yield degenerate bootstrap intervals; they do not establish generalization."
+            },
+            "explanation": {
+              "n": 20,
+              "positives": 14,
+              "groups": 1,
+              "positive_rate": 0.7,
+              "metrics": {
+                "native_support_loss": {
+                  "auroc": 0.9166666666666666,
+                  "auprc": 0.9676670668267308,
+                  "auroc_ci95": [
+                    0.9166666666666666,
+                    0.9166666666666666
+                  ],
+                  "auprc_ci95": [
+                    0.9676670668267308,
+                    0.9676670668267308
+                  ],
+                  "valid_rounds": 5000
+                },
+                "full_conditional_logprob_loss": {
+                  "auroc": 0.16666666666666666,
+                  "auprc": 0.563325211080629,
+                  "auroc_ci95": [
+                    0.16666666666666666,
+                    0.16666666666666666
+                  ],
+                  "auprc_ci95": [
+                    0.563325211080629,
+                    0.563325211080629
+                  ],
+                  "valid_rounds": 5000
+                }
+              },
+              "paired_differences": {
+                "native_support_loss minus full_conditional_logprob_loss": {
+                  "delta_auroc": 0.75,
+                  "ci95": [
+                    0.75,
+                    0.75
+                  ]
+                }
+              },
+              "low_event_warning": true,
+              "ci_note": "Few observed events can yield degenerate bootstrap intervals; they do not establish generalization."
+            }
+          },
+          "Patterned Grid": {
+            "all_content": {
+              "n": 7,
+              "positives": 6,
+              "groups": 1,
+              "positive_rate": 0.8571428571428571,
+              "metrics": {
+                "native_support_loss": {
+                  "auroc": 1.0,
+                  "auprc": 1.0,
+                  "auroc_ci95": [
+                    1.0,
+                    1.0
+                  ],
+                  "auprc_ci95": [
+                    1.0,
+                    1.0
+                  ],
+                  "valid_rounds": 5000
+                },
+                "full_conditional_logprob_loss": {
+                  "auroc": 0.16666666666666666,
+                  "auprc": 0.8178571428571427,
+                  "auroc_ci95": [
+                    0.16666666666666666,
+                    0.16666666666666666
+                  ],
+                  "auprc_ci95": [
+                    0.8178571428571427,
+                    0.8178571428571427
+                  ],
+                  "valid_rounds": 5000
+                }
+              },
+              "paired_differences": {
+                "native_support_loss minus full_conditional_logprob_loss": {
+                  "delta_auroc": 0.8333333333333334,
+                  "ci95": [
+                    0.8333333333333334,
+                    0.8333333333333334
+                  ]
+                }
+              },
+              "low_event_warning": true,
+              "ci_note": "Few observed events can yield degenerate bootstrap intervals; they do not establish generalization."
+            },
+            "answer": {
+              "n": 7,
+              "positives": 6,
+              "groups": 1,
+              "positive_rate": 0.8571428571428571,
+              "metrics": {
+                "native_support_loss": {
+                  "auroc": 0.8333333333333334,
+                  "auprc": 0.9761904761904762,
+                  "auroc_ci95": [
+                    0.8333333333333334,
+                    0.8333333333333334
+                  ],
+                  "auprc_ci95": [
+                    0.9761904761904762,
+                    0.9761904761904762
+                  ],
+                  "valid_rounds": 5000
+                },
+                "full_conditional_logprob_loss": {
+                  "auroc": 0.25,
+                  "auprc": 0.8373015873015871,
+                  "auroc_ci95": [
+                    0.25,
+                    0.25
+                  ],
+                  "auprc_ci95": [
+                    0.8373015873015871,
+                    0.8373015873015871
+                  ],
+                  "valid_rounds": 5000
+                }
+              },
+              "paired_differences": {
+                "native_support_loss minus full_conditional_logprob_loss": {
+                  "delta_auroc": 0.5833333333333334,
+                  "ci95": [
+                    0.5833333333333334,
+                    0.5833333333333334
+                  ]
+                }
+              },
+              "low_event_warning": true,
+              "ci_note": "Few observed events can yield degenerate bootstrap intervals; they do not establish generalization."
+            },
+            "explanation": {
+              "n": 7,
+              "positives": 6,
+              "groups": 1,
+              "positive_rate": 0.8571428571428571,
+              "metrics": {
+                "native_support_loss": {
+                  "auroc": 1.0,
+                  "auprc": 1.0,
+                  "auroc_ci95": [
+                    1.0,
+                    1.0
+                  ],
+                  "auprc_ci95": [
+                    1.0,
+                    1.0
+                  ],
+                  "valid_rounds": 5000
+                },
+                "full_conditional_logprob_loss": {
+                  "auroc": 0.16666666666666666,
+                  "auprc": 0.8178571428571427,
+                  "auroc_ci95": [
+                    0.16666666666666666,
+                    0.16666666666666666
+                  ],
+                  "auprc_ci95": [
+                    0.8178571428571427,
+                    0.8178571428571427
+                  ],
+                  "valid_rounds": 5000
+                }
+              },
+              "paired_differences": {
+                "native_support_loss minus full_conditional_logprob_loss": {
+                  "delta_auroc": 0.8333333333333334,
+                  "ci95": [
+                    0.8333333333333334,
+                    0.8333333333333334
+                  ]
+                }
+              },
+              "low_event_warning": true,
+              "ci_note": "Few observed events can yield degenerate bootstrap intervals; they do not establish generalization."
+            }
+          }
+        }
+      }
+    }
+  },
+  "internvl3": {
+    "max_reconstruction_error": 5.684341886080802e-14,
+    "protocol": "Posthoc unified consistent-brace/first-line partition; all three models, both interventions, all windows retained",
+    "kinds": {
+      "question": {
+        "behavior_effect": {
+          "n": 210,
+          "groups": 7,
+          "mean": 0.319047619047619,
+          "ci95": [
+            0.09523809523809523,
+            0.5619047619047619
+          ],
+          "bootstrap": "paired topic-cluster; 5000 draws"
+        },
+        "windows": {
+          "all_content": {
+            "n": 26,
+            "positives": 14,
+            "groups": 4,
+            "positive_rate": 0.5384615384615384,
+            "metrics": {
+              "native_support_loss": {
+                "auroc": 0.7619047619047619,
+                "auprc": 0.8135819279865055,
+                "auroc_ci95": [
+                  0.6223776223776224,
+                  1.0
+                ],
+                "auprc_ci95": [
+                  0.7823504401760705,
+                  1.0
+                ],
+                "valid_rounds": 5000
+              },
+              "full_conditional_logprob_loss": {
+                "auroc": 0.9345238095238095,
+                "auprc": 0.9614531431301617,
+                "auroc_ci95": [
+                  0.85,
+                  1.0
+                ],
+                "auprc_ci95": [
+                  0.9172602218355806,
+                  1.0
+                ],
+                "valid_rounds": 5000
+              }
+            },
+            "paired_differences": {
+              "native_support_loss minus full_conditional_logprob_loss": {
+                "delta_auroc": -0.17261904761904767,
+                "ci95": [
+                  -0.26041666666666663,
+                  0.0
+                ]
+              }
+            },
+            "low_event_warning": false,
+            "ci_note": "Few observed events can yield degenerate bootstrap intervals; they do not establish generalization.",
+            "missing_window": 0
+          },
+          "answer": {
+            "n": 26,
+            "positives": 14,
+            "groups": 4,
+            "positive_rate": 0.5384615384615384,
+            "metrics": {
+              "native_support_loss": {
+                "auroc": 0.9107142857142857,
+                "auprc": 0.9394400242614528,
+                "auroc_ci95": [
+                  0.875,
+                  1.0
+                ],
+                "auprc_ci95": [
+                  0.9055555555555556,
+                  1.0
+                ],
+                "valid_rounds": 5000
+              },
+              "full_conditional_logprob_loss": {
+                "auroc": 1.0,
+                "auprc": 1.0,
+                "auroc_ci95": [
+                  1.0,
+                  1.0
+                ],
+                "auprc_ci95": [
+                  1.0,
+                  1.0
+                ],
+                "valid_rounds": 5000
+              }
+            },
+            "paired_differences": {
+              "native_support_loss minus full_conditional_logprob_loss": {
+                "delta_auroc": -0.0892857142857143,
+                "ci95": [
+                  -0.125,
+                  0.0
+                ]
+              }
+            },
+            "low_event_warning": false,
+            "ci_note": "Few observed events can yield degenerate bootstrap intervals; they do not establish generalization.",
+            "missing_window": 0
+          },
+          "explanation": {
+            "n": 26,
+            "positives": 14,
+            "groups": 4,
+            "positive_rate": 0.5384615384615384,
+            "metrics": {
+              "native_support_loss": {
+                "auroc": 0.7559523809523809,
+                "auprc": 0.8033778463538525,
+                "auroc_ci95": [
+                  0.5909090909090909,
+                  1.0
+                ],
+                "auprc_ci95": [
+                  0.7543520233684812,
+                  1.0
+                ],
+                "valid_rounds": 5000
+              },
+              "full_conditional_logprob_loss": {
+                "auroc": 0.7678571428571429,
+                "auprc": 0.8272734734919609,
+                "auroc_ci95": [
+                  0.575,
+                  1.0
+                ],
+                "auprc_ci95": [
+                  0.7141254578754579,
+                  1.0
+                ],
+                "valid_rounds": 5000
+              }
+            },
+            "paired_differences": {
+              "native_support_loss minus full_conditional_logprob_loss": {
+                "delta_auroc": -0.011904761904761973,
+                "ci95": [
+                  -0.19999999999999996,
+                  0.10000000000000009
+                ]
+              }
+            },
+            "low_event_warning": false,
+            "ci_note": "Few observed events can yield degenerate bootstrap intervals; they do not establish generalization.",
+            "missing_window": 0
+          }
+        },
+        "topics": {
+          "Animals": {
+            "all_content": {
+              "n": 0,
+              "positives": 0,
+              "groups": 0,
+              "metrics": {},
+              "note": "single class or empty cohort"
+            },
+            "answer": {
+              "n": 0,
+              "positives": 0,
+              "groups": 0,
+              "metrics": {},
+              "note": "single class or empty cohort"
+            },
+            "explanation": {
+              "n": 0,
+              "positives": 0,
+              "groups": 0,
+              "metrics": {},
+              "note": "single class or empty cohort"
+            }
+          },
+          "Chess Pieces": {
+            "all_content": {
+              "n": 0,
+              "positives": 0,
+              "groups": 0,
+              "metrics": {},
+              "note": "single class or empty cohort"
+            },
+            "answer": {
+              "n": 0,
+              "positives": 0,
+              "groups": 0,
+              "metrics": {},
+              "note": "single class or empty cohort"
+            },
+            "explanation": {
+              "n": 0,
+              "positives": 0,
+              "groups": 0,
+              "metrics": {},
+              "note": "single class or empty cohort"
+            }
+          },
+          "Flags": {
+            "all_content": {
+              "n": 9,
+              "positives": 5,
+              "groups": 1,
+              "positive_rate": 0.5555555555555556,
+              "metrics": {
+                "native_support_loss": {
+                  "auroc": 0.7,
+                  "auprc": 0.7961904761904762,
+                  "auroc_ci95": [
+                    0.7,
+                    0.7
+                  ],
+                  "auprc_ci95": [
+                    0.7961904761904762,
+                    0.7961904761904762
+                  ],
+                  "valid_rounds": 5000
+                },
+                "full_conditional_logprob_loss": {
+                  "auroc": 1.0,
+                  "auprc": 1.0,
+                  "auroc_ci95": [
+                    1.0,
+                    1.0
+                  ],
+                  "auprc_ci95": [
+                    1.0,
+                    1.0
+                  ],
+                  "valid_rounds": 5000
+                }
+              },
+              "paired_differences": {
+                "native_support_loss minus full_conditional_logprob_loss": {
+                  "delta_auroc": -0.30000000000000004,
+                  "ci95": [
+                    -0.30000000000000004,
+                    -0.30000000000000004
+                  ]
+                }
+              },
+              "low_event_warning": true,
+              "ci_note": "Few observed events can yield degenerate bootstrap intervals; they do not establish generalization."
+            },
+            "answer": {
+              "n": 9,
+              "positives": 5,
+              "groups": 1,
+              "positive_rate": 0.5555555555555556,
+              "metrics": {
+                "native_support_loss": {
+                  "auroc": 0.95,
+                  "auprc": 0.9666666666666666,
+                  "auroc_ci95": [
+                    0.95,
+                    0.95
+                  ],
+                  "auprc_ci95": [
+                    0.9666666666666666,
+                    0.9666666666666666
+                  ],
+                  "valid_rounds": 5000
+                },
+                "full_conditional_logprob_loss": {
+                  "auroc": 1.0,
+                  "auprc": 1.0,
+                  "auroc_ci95": [
+                    1.0,
+                    1.0
+                  ],
+                  "auprc_ci95": [
+                    1.0,
+                    1.0
+                  ],
+                  "valid_rounds": 5000
+                }
+              },
+              "paired_differences": {
+                "native_support_loss minus full_conditional_logprob_loss": {
+                  "delta_auroc": -0.050000000000000044,
+                  "ci95": [
+                    -0.050000000000000044,
+                    -0.050000000000000044
+                  ]
+                }
+              },
+              "low_event_warning": true,
+              "ci_note": "Few observed events can yield degenerate bootstrap intervals; they do not establish generalization."
+            },
+            "explanation": {
+              "n": 9,
+              "positives": 5,
+              "groups": 1,
+              "positive_rate": 0.5555555555555556,
+              "metrics": {
+                "native_support_loss": {
+                  "auroc": 0.7,
+                  "auprc": 0.7961904761904762,
+                  "auroc_ci95": [
+                    0.7,
+                    0.7
+                  ],
+                  "auprc_ci95": [
+                    0.7961904761904762,
+                    0.7961904761904762
+                  ],
+                  "valid_rounds": 5000
+                },
+                "full_conditional_logprob_loss": {
+                  "auroc": 0.95,
+                  "auprc": 0.9666666666666666,
+                  "auroc_ci95": [
+                    0.95,
+                    0.95
+                  ],
+                  "auprc_ci95": [
+                    0.9666666666666666,
+                    0.9666666666666666
+                  ],
+                  "valid_rounds": 5000
+                }
+              },
+              "paired_differences": {
+                "native_support_loss minus full_conditional_logprob_loss": {
+                  "delta_auroc": -0.25,
+                  "ci95": [
+                    -0.25,
+                    -0.25
+                  ]
+                }
+              },
+              "low_event_warning": true,
+              "ci_note": "Few observed events can yield degenerate bootstrap intervals; they do not establish generalization."
+            }
+          },
+          "Game Boards": {
+            "all_content": {
+              "n": 4,
+              "positives": 1,
+              "groups": 1,
+              "positive_rate": 0.25,
+              "metrics": {
+                "native_support_loss": {
+                  "auroc": 1.0,
+                  "auprc": 1.0,
+                  "auroc_ci95": [
+                    1.0,
+                    1.0
+                  ],
+                  "auprc_ci95": [
+                    1.0,
+                    1.0
+                  ],
+                  "valid_rounds": 5000
+                },
+                "full_conditional_logprob_loss": {
+                  "auroc": 1.0,
+                  "auprc": 1.0,
+                  "auroc_ci95": [
+                    1.0,
+                    1.0
+                  ],
+                  "auprc_ci95": [
+                    1.0,
+                    1.0
+                  ],
+                  "valid_rounds": 5000
+                }
+              },
+              "paired_differences": {
+                "native_support_loss minus full_conditional_logprob_loss": {
+                  "delta_auroc": 0.0,
+                  "ci95": [
+                    0.0,
+                    0.0
+                  ]
+                }
+              },
+              "low_event_warning": true,
+              "ci_note": "Few observed events can yield degenerate bootstrap intervals; they do not establish generalization."
+            },
+            "answer": {
+              "n": 4,
+              "positives": 1,
+              "groups": 1,
+              "positive_rate": 0.25,
+              "metrics": {
+                "native_support_loss": {
+                  "auroc": 1.0,
+                  "auprc": 1.0,
+                  "auroc_ci95": [
+                    1.0,
+                    1.0
+                  ],
+                  "auprc_ci95": [
+                    1.0,
+                    1.0
+                  ],
+                  "valid_rounds": 5000
+                },
+                "full_conditional_logprob_loss": {
+                  "auroc": 1.0,
+                  "auprc": 1.0,
+                  "auroc_ci95": [
+                    1.0,
+                    1.0
+                  ],
+                  "auprc_ci95": [
+                    1.0,
+                    1.0
+                  ],
+                  "valid_rounds": 5000
+                }
+              },
+              "paired_differences": {
+                "native_support_loss minus full_conditional_logprob_loss": {
+                  "delta_auroc": 0.0,
+                  "ci95": [
+                    0.0,
+                    0.0
+                  ]
+                }
+              },
+              "low_event_warning": true,
+              "ci_note": "Few observed events can yield degenerate bootstrap intervals; they do not establish generalization."
+            },
+            "explanation": {
+              "n": 4,
+              "positives": 1,
+              "groups": 1,
+              "positive_rate": 0.25,
+              "metrics": {
+                "native_support_loss": {
+                  "auroc": 1.0,
+                  "auprc": 1.0,
+                  "auroc_ci95": [
+                    1.0,
+                    1.0
+                  ],
+                  "auprc_ci95": [
+                    1.0,
+                    1.0
+                  ],
+                  "valid_rounds": 5000
+                },
+                "full_conditional_logprob_loss": {
+                  "auroc": 1.0,
+                  "auprc": 1.0,
+                  "auroc_ci95": [
+                    1.0,
+                    1.0
+                  ],
+                  "auprc_ci95": [
+                    1.0,
+                    1.0
+                  ],
+                  "valid_rounds": 5000
+                }
+              },
+              "paired_differences": {
+                "native_support_loss minus full_conditional_logprob_loss": {
+                  "delta_auroc": 0.0,
+                  "ci95": [
+                    0.0,
+                    0.0
+                  ]
+                }
+              },
+              "low_event_warning": true,
+              "ci_note": "Few observed events can yield degenerate bootstrap intervals; they do not establish generalization."
+            }
+          },
+          "Logos": {
+            "all_content": {
+              "n": 2,
+              "positives": 1,
+              "groups": 1,
+              "positive_rate": 0.5,
+              "metrics": {
+                "native_support_loss": {
+                  "auroc": 1.0,
+                  "auprc": 1.0,
+                  "auroc_ci95": [
+                    1.0,
+                    1.0
+                  ],
+                  "auprc_ci95": [
+                    1.0,
+                    1.0
+                  ],
+                  "valid_rounds": 5000
+                },
+                "full_conditional_logprob_loss": {
+                  "auroc": 1.0,
+                  "auprc": 1.0,
+                  "auroc_ci95": [
+                    1.0,
+                    1.0
+                  ],
+                  "auprc_ci95": [
+                    1.0,
+                    1.0
+                  ],
+                  "valid_rounds": 5000
+                }
+              },
+              "paired_differences": {
+                "native_support_loss minus full_conditional_logprob_loss": {
+                  "delta_auroc": 0.0,
+                  "ci95": [
+                    0.0,
+                    0.0
+                  ]
+                }
+              },
+              "low_event_warning": true,
+              "ci_note": "Few observed events can yield degenerate bootstrap intervals; they do not establish generalization."
+            },
+            "answer": {
+              "n": 2,
+              "positives": 1,
+              "groups": 1,
+              "positive_rate": 0.5,
+              "metrics": {
+                "native_support_loss": {
+                  "auroc": 1.0,
+                  "auprc": 1.0,
+                  "auroc_ci95": [
+                    1.0,
+                    1.0
+                  ],
+                  "auprc_ci95": [
+                    1.0,
+                    1.0
+                  ],
+                  "valid_rounds": 5000
+                },
+                "full_conditional_logprob_loss": {
+                  "auroc": 1.0,
+                  "auprc": 1.0,
+                  "auroc_ci95": [
+                    1.0,
+                    1.0
+                  ],
+                  "auprc_ci95": [
+                    1.0,
+                    1.0
+                  ],
+                  "valid_rounds": 5000
+                }
+              },
+              "paired_differences": {
+                "native_support_loss minus full_conditional_logprob_loss": {
+                  "delta_auroc": 0.0,
+                  "ci95": [
+                    0.0,
+                    0.0
+                  ]
+                }
+              },
+              "low_event_warning": true,
+              "ci_note": "Few observed events can yield degenerate bootstrap intervals; they do not establish generalization."
+            },
+            "explanation": {
+              "n": 2,
+              "positives": 1,
+              "groups": 1,
+              "positive_rate": 0.5,
+              "metrics": {
+                "native_support_loss": {
+                  "auroc": 1.0,
+                  "auprc": 1.0,
+                  "auroc_ci95": [
+                    1.0,
+                    1.0
+                  ],
+                  "auprc_ci95": [
+                    1.0,
+                    1.0
+                  ],
+                  "valid_rounds": 5000
+                },
+                "full_conditional_logprob_loss": {
+                  "auroc": 1.0,
+                  "auprc": 1.0,
+                  "auroc_ci95": [
+                    1.0,
+                    1.0
+                  ],
+                  "auprc_ci95": [
+                    1.0,
+                    1.0
+                  ],
+                  "valid_rounds": 5000
+                }
+              },
+              "paired_differences": {
+                "native_support_loss minus full_conditional_logprob_loss": {
+                  "delta_auroc": 0.0,
+                  "ci95": [
+                    0.0,
+                    0.0
+                  ]
+                }
+              },
+              "low_event_warning": true,
+              "ci_note": "Few observed events can yield degenerate bootstrap intervals; they do not establish generalization."
+            }
+          },
+          "Optical Illusion": {
+            "all_content": {
+              "n": 11,
+              "positives": 7,
+              "groups": 1,
+              "positive_rate": 0.6363636363636364,
+              "metrics": {
+                "native_support_loss": {
+                  "auroc": 0.5714285714285714,
+                  "auprc": 0.7947278911564626,
+                  "auroc_ci95": [
+                    0.5714285714285714,
+                    0.5714285714285714
+                  ],
+                  "auprc_ci95": [
+                    0.7947278911564626,
+                    0.7947278911564626
+                  ],
+                  "valid_rounds": 5000
+                },
+                "full_conditional_logprob_loss": {
+                  "auroc": 0.8214285714285714,
+                  "auprc": 0.9129251700680273,
+                  "auroc_ci95": [
+                    0.8214285714285714,
+                    0.8214285714285714
+                  ],
+                  "auprc_ci95": [
+                    0.9129251700680273,
+                    0.9129251700680273
+                  ],
+                  "valid_rounds": 5000
+                }
+              },
+              "paired_differences": {
+                "native_support_loss minus full_conditional_logprob_loss": {
+                  "delta_auroc": -0.25,
+                  "ci95": [
+                    -0.25,
+                    -0.25
+                  ]
+                }
+              },
+              "low_event_warning": true,
+              "ci_note": "Few observed events can yield degenerate bootstrap intervals; they do not establish generalization."
+            },
+            "answer": {
+              "n": 11,
+              "positives": 7,
+              "groups": 1,
+              "positive_rate": 0.6363636363636364,
+              "metrics": {
+                "native_support_loss": {
+                  "auroc": 0.8571428571428571,
+                  "auprc": 0.9325396825396826,
+                  "auroc_ci95": [
+                    0.8571428571428571,
+                    0.8571428571428571
+                  ],
+                  "auprc_ci95": [
+                    0.9325396825396826,
+                    0.9325396825396826
+                  ],
+                  "valid_rounds": 5000
+                },
+                "full_conditional_logprob_loss": {
+                  "auroc": 1.0,
+                  "auprc": 1.0,
+                  "auroc_ci95": [
+                    1.0,
+                    1.0
+                  ],
+                  "auprc_ci95": [
+                    1.0,
+                    1.0
+                  ],
+                  "valid_rounds": 5000
+                }
+              },
+              "paired_differences": {
+                "native_support_loss minus full_conditional_logprob_loss": {
+                  "delta_auroc": -0.1428571428571429,
+                  "ci95": [
+                    -0.1428571428571429,
+                    -0.1428571428571429
+                  ]
+                }
+              },
+              "low_event_warning": true,
+              "ci_note": "Few observed events can yield degenerate bootstrap intervals; they do not establish generalization."
+            },
+            "explanation": {
+              "n": 11,
+              "positives": 7,
+              "groups": 1,
+              "positive_rate": 0.6363636363636364,
+              "metrics": {
+                "native_support_loss": {
+                  "auroc": 0.5357142857142857,
+                  "auprc": 0.7590136054421769,
+                  "auroc_ci95": [
+                    0.5357142857142857,
+                    0.5357142857142857
+                  ],
+                  "auprc_ci95": [
+                    0.7590136054421769,
+                    0.7590136054421769
+                  ],
+                  "valid_rounds": 5000
+                },
+                "full_conditional_logprob_loss": {
+                  "auroc": 0.5357142857142857,
+                  "auprc": 0.7191403834260977,
+                  "auroc_ci95": [
+                    0.5357142857142857,
+                    0.5357142857142857
+                  ],
+                  "auprc_ci95": [
+                    0.7191403834260977,
+                    0.7191403834260977
+                  ],
+                  "valid_rounds": 5000
+                }
+              },
+              "paired_differences": {
+                "native_support_loss minus full_conditional_logprob_loss": {
+                  "delta_auroc": 0.0,
+                  "ci95": [
+                    0.0,
+                    0.0
+                  ]
+                }
+              },
+              "low_event_warning": true,
+              "ci_note": "Few observed events can yield degenerate bootstrap intervals; they do not establish generalization."
+            }
+          },
+          "Patterned Grid": {
+            "all_content": {
+              "n": 0,
+              "positives": 0,
+              "groups": 0,
+              "metrics": {},
+              "note": "single class or empty cohort"
+            },
+            "answer": {
+              "n": 0,
+              "positives": 0,
+              "groups": 0,
+              "metrics": {},
+              "note": "single class or empty cohort"
+            },
+            "explanation": {
+              "n": 0,
+              "positives": 0,
+              "groups": 0,
+              "metrics": {},
+              "note": "single class or empty cohort"
+            }
+          }
+        }
+      },
+      "prefix": {
+        "behavior_effect": {
+          "n": 210,
+          "groups": 7,
+          "mean": 0.09523809523809523,
+          "ci95": [
+            0.0380952380952381,
+            0.1523809523809524
+          ],
+          "bootstrap": "paired topic-cluster; 5000 draws"
+        },
+        "windows": {
+          "all_content": {
+            "n": 33,
+            "positives": 10,
+            "groups": 4,
+            "positive_rate": 0.30303030303030304,
+            "metrics": {
+              "native_support_loss": {
+                "auroc": 0.39565217391304347,
+                "auprc": 0.264434521316554,
+                "auroc_ci95": [
+                  0.17857142857142858,
+                  0.5357142857142857
+                ],
+                "auprc_ci95": [
+                  0.12254901960784315,
+                  0.43111471861471856
+                ],
+                "valid_rounds": 4984
+              },
+              "full_conditional_logprob_loss": {
+                "auroc": 0.4956521739130435,
+                "auprc": 0.34472108806618024,
+                "auroc_ci95": [
+                  0.375,
+                  0.6666666666666666
+                ],
+                "auprc_ci95": [
+                  0.18139589169000933,
+                  0.5654761904761905
+                ],
+                "valid_rounds": 4984
+              }
+            },
+            "paired_differences": {
+              "native_support_loss minus full_conditional_logprob_loss": {
+                "delta_auroc": -0.10000000000000003,
+                "ci95": [
+                  -0.40579710144927533,
+                  0.14285714285714285
+                ]
+              }
+            },
+            "low_event_warning": false,
+            "ci_note": "Few observed events can yield degenerate bootstrap intervals; they do not establish generalization.",
+            "missing_window": 0
+          },
+          "answer": {
+            "n": 33,
+            "positives": 10,
+            "groups": 4,
+            "positive_rate": 0.30303030303030304,
+            "metrics": {
+              "native_support_loss": {
+                "auroc": 0.33043478260869563,
+                "auprc": 0.2452700157441537,
+                "auroc_ci95": [
+                  0.0,
+                  0.4166666666666667
+                ],
+                "auprc_ci95": [
+                  0.11560457516339868,
+                  0.3734911913483342
+                ],
+                "valid_rounds": 4984
+              },
+              "full_conditional_logprob_loss": {
+                "auroc": 0.9260869565217391,
+                "auprc": 0.8294977244977245,
+                "auroc_ci95": [
+                  0.8333333333333334,
+                  1.0
+                ],
+                "auprc_ci95": [
+                  0.7163690476190476,
+                  1.0
+                ],
+                "valid_rounds": 4984
+              }
+            },
+            "paired_differences": {
+              "native_support_loss minus full_conditional_logprob_loss": {
+                "delta_auroc": -0.5956521739130435,
+                "ci95": [
+                  -1.0,
+                  -0.4166666666666667
+                ]
+              }
+            },
+            "low_event_warning": false,
+            "ci_note": "Few observed events can yield degenerate bootstrap intervals; they do not establish generalization.",
+            "missing_window": 0
+          },
+          "explanation": {
+            "n": 33,
+            "positives": 10,
+            "groups": 4,
+            "positive_rate": 0.30303030303030304,
+            "metrics": {
+              "native_support_loss": {
+                "auroc": 0.39565217391304347,
+                "auprc": 0.264434521316554,
+                "auroc_ci95": [
+                  0.17857142857142858,
+                  0.5357142857142857
+                ],
+                "auprc_ci95": [
+                  0.12254901960784315,
+                  0.43111471861471856
+                ],
+                "valid_rounds": 4984
+              },
+              "full_conditional_logprob_loss": {
+                "auroc": 0.3826086956521739,
+                "auprc": 0.28667724867724864,
+                "auroc_ci95": [
+                  0.2916666666666667,
+                  0.5368421052631579
+                ],
+                "auprc_ci95": [
+                  0.15431560776388362,
+                  0.5381944444444444
+                ],
+                "valid_rounds": 4984
+              }
+            },
+            "paired_differences": {
+              "native_support_loss minus full_conditional_logprob_loss": {
+                "delta_auroc": 0.013043478260869545,
+                "ci95": [
+                  -0.3214285714285714,
+                  0.17857142857142855
+                ]
+              }
+            },
+            "low_event_warning": false,
+            "ci_note": "Few observed events can yield degenerate bootstrap intervals; they do not establish generalization.",
+            "missing_window": 0
+          }
+        },
+        "topics": {
+          "Animals": {
+            "all_content": {
+              "n": 0,
+              "positives": 0,
+              "groups": 0,
+              "metrics": {},
+              "note": "single class or empty cohort"
+            },
+            "answer": {
+              "n": 0,
+              "positives": 0,
+              "groups": 0,
+              "metrics": {},
+              "note": "single class or empty cohort"
+            },
+            "explanation": {
+              "n": 0,
+              "positives": 0,
+              "groups": 0,
+              "metrics": {},
+              "note": "single class or empty cohort"
+            }
+          },
+          "Chess Pieces": {
+            "all_content": {
+              "n": 0,
+              "positives": 0,
+              "groups": 0,
+              "metrics": {},
+              "note": "single class or empty cohort"
+            },
+            "answer": {
+              "n": 0,
+              "positives": 0,
+              "groups": 0,
+              "metrics": {},
+              "note": "single class or empty cohort"
+            },
+            "explanation": {
+              "n": 0,
+              "positives": 0,
+              "groups": 0,
+              "metrics": {},
+              "note": "single class or empty cohort"
+            }
+          },
+          "Flags": {
+            "all_content": {
+              "n": 9,
+              "positives": 3,
+              "groups": 1,
+              "positive_rate": 0.3333333333333333,
+              "metrics": {
+                "native_support_loss": {
+                  "auroc": 0.2222222222222222,
+                  "auprc": 0.3055555555555555,
+                  "auroc_ci95": [
+                    0.2222222222222222,
+                    0.2222222222222222
+                  ],
+                  "auprc_ci95": [
+                    0.3055555555555555,
+                    0.3055555555555555
+                  ],
+                  "valid_rounds": 5000
+                },
+                "full_conditional_logprob_loss": {
+                  "auroc": 0.6666666666666666,
+                  "auprc": 0.6333333333333333,
+                  "auroc_ci95": [
+                    0.6666666666666666,
+                    0.6666666666666666
+                  ],
+                  "auprc_ci95": [
+                    0.6333333333333333,
+                    0.6333333333333333
+                  ],
+                  "valid_rounds": 5000
+                }
+              },
+              "paired_differences": {
+                "native_support_loss minus full_conditional_logprob_loss": {
+                  "delta_auroc": -0.4444444444444444,
+                  "ci95": [
+                    -0.4444444444444444,
+                    -0.4444444444444444
+                  ]
+                }
+              },
+              "low_event_warning": true,
+              "ci_note": "Few observed events can yield degenerate bootstrap intervals; they do not establish generalization."
+            },
+            "answer": {
+              "n": 9,
+              "positives": 3,
+              "groups": 1,
+              "positive_rate": 0.3333333333333333,
+              "metrics": {
+                "native_support_loss": {
+                  "auroc": 0.0,
+                  "auprc": 0.24206349206349206,
+                  "auroc_ci95": [
+                    0.0,
+                    0.0
+                  ],
+                  "auprc_ci95": [
+                    0.24206349206349206,
+                    0.24206349206349206
+                  ],
+                  "valid_rounds": 5000
+                },
+                "full_conditional_logprob_loss": {
+                  "auroc": 1.0,
+                  "auprc": 1.0,
+                  "auroc_ci95": [
+                    1.0,
+                    1.0
+                  ],
+                  "auprc_ci95": [
+                    1.0,
+                    1.0
+                  ],
+                  "valid_rounds": 5000
+                }
+              },
+              "paired_differences": {
+                "native_support_loss minus full_conditional_logprob_loss": {
+                  "delta_auroc": -1.0,
+                  "ci95": [
+                    -1.0,
+                    -1.0
+                  ]
+                }
+              },
+              "low_event_warning": true,
+              "ci_note": "Few observed events can yield degenerate bootstrap intervals; they do not establish generalization."
+            },
+            "explanation": {
+              "n": 9,
+              "positives": 3,
+              "groups": 1,
+              "positive_rate": 0.3333333333333333,
+              "metrics": {
+                "native_support_loss": {
+                  "auroc": 0.2222222222222222,
+                  "auprc": 0.3055555555555555,
+                  "auroc_ci95": [
+                    0.2222222222222222,
+                    0.2222222222222222
+                  ],
+                  "auprc_ci95": [
+                    0.3055555555555555,
+                    0.3055555555555555
+                  ],
+                  "valid_rounds": 5000
+                },
+                "full_conditional_logprob_loss": {
+                  "auroc": 0.5555555555555556,
+                  "auprc": 0.5873015873015873,
+                  "auroc_ci95": [
+                    0.5555555555555556,
+                    0.5555555555555556
+                  ],
+                  "auprc_ci95": [
+                    0.5873015873015873,
+                    0.5873015873015873
+                  ],
+                  "valid_rounds": 5000
+                }
+              },
+              "paired_differences": {
+                "native_support_loss minus full_conditional_logprob_loss": {
+                  "delta_auroc": -0.33333333333333337,
+                  "ci95": [
+                    -0.33333333333333337,
+                    -0.33333333333333337
+                  ]
+                }
+              },
+              "low_event_warning": true,
+              "ci_note": "Few observed events can yield degenerate bootstrap intervals; they do not establish generalization."
+            }
+          },
+          "Game Boards": {
+            "all_content": {
+              "n": 5,
+              "positives": 0,
+              "groups": 1,
+              "metrics": {},
+              "note": "single class or empty cohort"
+            },
+            "answer": {
+              "n": 5,
+              "positives": 0,
+              "groups": 1,
+              "metrics": {},
+              "note": "single class or empty cohort"
+            },
+            "explanation": {
+              "n": 5,
+              "positives": 0,
+              "groups": 1,
+              "metrics": {},
+              "note": "single class or empty cohort"
+            }
+          },
+          "Logos": {
+            "all_content": {
+              "n": 2,
+              "positives": 1,
+              "groups": 1,
+              "positive_rate": 0.5,
+              "metrics": {
+                "native_support_loss": {
+                  "auroc": 0.0,
+                  "auprc": 0.5,
+                  "auroc_ci95": [
+                    0.0,
+                    0.0
+                  ],
+                  "auprc_ci95": [
+                    0.5,
+                    0.5
+                  ],
+                  "valid_rounds": 5000
+                },
+                "full_conditional_logprob_loss": {
+                  "auroc": 0.0,
+                  "auprc": 0.5,
+                  "auroc_ci95": [
+                    0.0,
+                    0.0
+                  ],
+                  "auprc_ci95": [
+                    0.5,
+                    0.5
+                  ],
+                  "valid_rounds": 5000
+                }
+              },
+              "paired_differences": {
+                "native_support_loss minus full_conditional_logprob_loss": {
+                  "delta_auroc": 0.0,
+                  "ci95": [
+                    0.0,
+                    0.0
+                  ]
+                }
+              },
+              "low_event_warning": true,
+              "ci_note": "Few observed events can yield degenerate bootstrap intervals; they do not establish generalization."
+            },
+            "answer": {
+              "n": 2,
+              "positives": 1,
+              "groups": 1,
+              "positive_rate": 0.5,
+              "metrics": {
+                "native_support_loss": {
+                  "auroc": 0.0,
+                  "auprc": 0.5,
+                  "auroc_ci95": [
+                    0.0,
+                    0.0
+                  ],
+                  "auprc_ci95": [
+                    0.5,
+                    0.5
+                  ],
+                  "valid_rounds": 5000
+                },
+                "full_conditional_logprob_loss": {
+                  "auroc": 1.0,
+                  "auprc": 1.0,
+                  "auroc_ci95": [
+                    1.0,
+                    1.0
+                  ],
+                  "auprc_ci95": [
+                    1.0,
+                    1.0
+                  ],
+                  "valid_rounds": 5000
+                }
+              },
+              "paired_differences": {
+                "native_support_loss minus full_conditional_logprob_loss": {
+                  "delta_auroc": -1.0,
+                  "ci95": [
+                    -1.0,
+                    -1.0
+                  ]
+                }
+              },
+              "low_event_warning": true,
+              "ci_note": "Few observed events can yield degenerate bootstrap intervals; they do not establish generalization."
+            },
+            "explanation": {
+              "n": 2,
+              "positives": 1,
+              "groups": 1,
+              "positive_rate": 0.5,
+              "metrics": {
+                "native_support_loss": {
+                  "auroc": 0.0,
+                  "auprc": 0.5,
+                  "auroc_ci95": [
+                    0.0,
+                    0.0
+                  ],
+                  "auprc_ci95": [
+                    0.5,
+                    0.5
+                  ],
+                  "valid_rounds": 5000
+                },
+                "full_conditional_logprob_loss": {
+                  "auroc": 0.0,
+                  "auprc": 0.5,
+                  "auroc_ci95": [
+                    0.0,
+                    0.0
+                  ],
+                  "auprc_ci95": [
+                    0.5,
+                    0.5
+                  ],
+                  "valid_rounds": 5000
+                }
+              },
+              "paired_differences": {
+                "native_support_loss minus full_conditional_logprob_loss": {
+                  "delta_auroc": 0.0,
+                  "ci95": [
+                    0.0,
+                    0.0
+                  ]
+                }
+              },
+              "low_event_warning": true,
+              "ci_note": "Few observed events can yield degenerate bootstrap intervals; they do not establish generalization."
+            }
+          },
+          "Optical Illusion": {
+            "all_content": {
+              "n": 17,
+              "positives": 6,
+              "groups": 1,
+              "positive_rate": 0.35294117647058826,
+              "metrics": {
+                "native_support_loss": {
+                  "auroc": 0.5151515151515151,
+                  "auprc": 0.3966422466422466,
+                  "auroc_ci95": [
+                    0.5151515151515151,
+                    0.5151515151515151
+                  ],
+                  "auprc_ci95": [
+                    0.3966422466422466,
+                    0.3966422466422466
+                  ],
+                  "valid_rounds": 5000
+                },
+                "full_conditional_logprob_loss": {
+                  "auroc": 0.3939393939393939,
+                  "auprc": 0.3567793317793318,
+                  "auroc_ci95": [
+                    0.3939393939393939,
+                    0.3939393939393939
+                  ],
+                  "auprc_ci95": [
+                    0.3567793317793318,
+                    0.3567793317793318
+                  ],
+                  "valid_rounds": 5000
+                }
+              },
+              "paired_differences": {
+                "native_support_loss minus full_conditional_logprob_loss": {
+                  "delta_auroc": 0.12121212121212122,
+                  "ci95": [
+                    0.12121212121212122,
+                    0.12121212121212122
+                  ]
+                }
+              },
+              "low_event_warning": true,
+              "ci_note": "Few observed events can yield degenerate bootstrap intervals; they do not establish generalization."
+            },
+            "answer": {
+              "n": 17,
+              "positives": 6,
+              "groups": 1,
+              "positive_rate": 0.35294117647058826,
+              "metrics": {
+                "native_support_loss": {
+                  "auroc": 0.36363636363636365,
+                  "auprc": 0.316501554001554,
+                  "auroc_ci95": [
+                    0.36363636363636365,
+                    0.36363636363636365
+                  ],
+                  "auprc_ci95": [
+                    0.316501554001554,
+                    0.316501554001554
+                  ],
+                  "valid_rounds": 5000
+                },
+                "full_conditional_logprob_loss": {
+                  "auroc": 0.8484848484848485,
+                  "auprc": 0.7329365079365079,
+                  "auroc_ci95": [
+                    0.8484848484848485,
+                    0.8484848484848485
+                  ],
+                  "auprc_ci95": [
+                    0.7329365079365079,
+                    0.7329365079365079
+                  ],
+                  "valid_rounds": 5000
+                }
+              },
+              "paired_differences": {
+                "native_support_loss minus full_conditional_logprob_loss": {
+                  "delta_auroc": -0.48484848484848486,
+                  "ci95": [
+                    -0.48484848484848486,
+                    -0.48484848484848486
+                  ]
+                }
+              },
+              "low_event_warning": true,
+              "ci_note": "Few observed events can yield degenerate bootstrap intervals; they do not establish generalization."
+            },
+            "explanation": {
+              "n": 17,
+              "positives": 6,
+              "groups": 1,
+              "positive_rate": 0.35294117647058826,
+              "metrics": {
+                "native_support_loss": {
+                  "auroc": 0.5151515151515151,
+                  "auprc": 0.3966422466422466,
+                  "auroc_ci95": [
+                    0.5151515151515151,
+                    0.5151515151515151
+                  ],
+                  "auprc_ci95": [
+                    0.3966422466422466,
+                    0.3966422466422466
+                  ],
+                  "valid_rounds": 5000
+                },
+                "full_conditional_logprob_loss": {
+                  "auroc": 0.3484848484848485,
+                  "auprc": 0.3432974432974433,
+                  "auroc_ci95": [
+                    0.3484848484848485,
+                    0.3484848484848485
+                  ],
+                  "auprc_ci95": [
+                    0.3432974432974433,
+                    0.3432974432974433
+                  ],
+                  "valid_rounds": 5000
+                }
+              },
+              "paired_differences": {
+                "native_support_loss minus full_conditional_logprob_loss": {
+                  "delta_auroc": 0.16666666666666663,
+                  "ci95": [
+                    0.16666666666666663,
+                    0.16666666666666663
+                  ]
+                }
+              },
+              "low_event_warning": true,
+              "ci_note": "Few observed events can yield degenerate bootstrap intervals; they do not establish generalization."
+            }
+          },
+          "Patterned Grid": {
+            "all_content": {
+              "n": 0,
+              "positives": 0,
+              "groups": 0,
+              "metrics": {},
+              "note": "single class or empty cohort"
+            },
+            "answer": {
+              "n": 0,
+              "positives": 0,
+              "groups": 0,
+              "metrics": {},
+              "note": "single class or empty cohort"
+            },
+            "explanation": {
+              "n": 0,
+              "positives": 0,
+              "groups": 0,
+              "metrics": {},
+              "note": "single class or empty cohort"
+            }
+          }
+        }
+      }
+    }
+  }
+}

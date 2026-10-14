@@ -1,0 +1,255 @@
+{
+  "n_unique_ok": 210,
+  "shard_counts": {
+    "shard_0.jsonl": 27,
+    "shard_1.jsonl": 27,
+    "shard_2.jsonl": 26,
+    "shard_3.jsonl": 26,
+    "shard_4.jsonl": 26,
+    "shard_5.jsonl": 26,
+    "shard_6.jsonl": 26,
+    "shard_7.jsonl": 26
+  },
+  "all_sha256_match_official": true,
+  "workers_complete_zero_exit": 8,
+  "foreground_zero_exit": true,
+  "topics": {
+    "Animals": 30,
+    "Chess Pieces": 30,
+    "Flags": 30,
+    "Game Boards": 30,
+    "Logos": 30,
+    "Optical Illusion": 30,
+    "Patterned Grid": 30
+  },
+  "visual_topics": {
+    "Flags": 24,
+    "Game Boards": 30,
+    "Patterned Grid": 5
+  },
+  "n_scored_paths": 1614,
+  "n_scored_positions": 20482,
+  "max_recomputed_absolute_gaps": {
+    "QCD_formula_gap": 4.263256414560601e-14,
+    "QCD_window_gap": 0,
+    "QCD_increment_gap": 0,
+    "VCD_formula_gap": 0,
+    "VCD_window_gap": 0,
+    "VCD_increment_gap": 0,
+    "PCD_formula_gap": 2.842170943040401e-14,
+    "PCD_window_gap": 0,
+    "PCD_increment_gap": 0,
+    "PCD_decomposition_gap": 5.684341886080802e-14,
+    "full_logprob_window_gap": 0,
+    "conditional_llr_gap": 4.440892098500626e-16
+  },
+  "prefix_history_length_matched": 210,
+  "fixed_candidate_content_token_counts": {
+    "1": 179,
+    "2": 31
+  },
+  "generation_length_statistics": {
+    "prefix/visual": {
+      "n": 210,
+      "mean": 7.9523809523809526,
+      "median": 6.5,
+      "max": 24,
+      "at_24_token_cap": 19
+    },
+    "prefix/cue": {
+      "n": 210,
+      "mean": 6.428571428571429,
+      "median": 7.0,
+      "max": 9,
+      "at_24_token_cap": 0
+    },
+    "prefix/neutral": {
+      "n": 210,
+      "mean": 7.204761904761905,
+      "median": 6.0,
+      "max": 24,
+      "at_24_token_cap": 8
+    },
+    "visual/base": {
+      "n": 59,
+      "mean": 4.254237288135593,
+      "median": 4.0,
+      "max": 5,
+      "at_24_token_cap": 0
+    },
+    "visual/counterfactual": {
+      "n": 59,
+      "mean": 4.322033898305085,
+      "median": 4.0,
+      "max": 5,
+      "at_24_token_cap": 0
+    },
+    "visual/sham": {
+      "n": 59,
+      "mean": 4.254237288135593,
+      "median": 4.0,
+      "max": 5,
+      "at_24_token_cap": 0
+    }
+  },
+  "support_context_unique": 329,
+  "support_context_total_uses": 420,
+  "support_context_max_uses": 4,
+  "visual_donor_unique": 99,
+  "visual_donor_total_uses": 118,
+  "visual_donor_max_uses": 3,
+  "configuration": {
+    "dtype": "torch.bfloat16",
+    "transformers": "4.57.6",
+    "torch": "2.9.0+cu128",
+    "model_backend": "complete_single_gpu_local_sdpa_no_offload",
+    "data_backend": "direct_parquet_row_groups_no_hf_cache",
+    "core_sha256": "f90bed65700ebcd01a0a28365e4fb9d0ee55a88102d7a83768cf748e9fde3238",
+    "worker_sha256": "0f3c43f023409d8510df300aefb87de0d49778313db398f2c69a8df7def3124b"
+  },
+  "paired_score_topic_sensitivity": {
+    "prefix/cue_minus_neutral/pcd_level": {
+      "answer_weighted_mean": -28.586154102485565,
+      "topic_means": {
+        "Animals": -35.418356582080044,
+        "Chess Pieces": -35.75705481147185,
+        "Flags": -33.22144635705208,
+        "Game Boards": -25.034682695263616,
+        "Logos": -34.856383742395856,
+        "Optical Illusion": -0.014470230699306797,
+        "Patterned Grid": -35.80068429843619
+      },
+      "topic_counts": {
+        "Animals": 30,
+        "Chess Pieces": 30,
+        "Flags": 30,
+        "Game Boards": 30,
+        "Logos": 30,
+        "Optical Illusion": 30,
+        "Patterned Grid": 30
+      },
+      "whole_topic_resampling_ci95": [
+        -35.25590143209602,
+        -18.502654374989977
+      ],
+      "enumerated_ordered_resamples": 823543,
+      "note": "Seven-topic sensitivity analysis; visual subset has only three topics and 27 resamples, not strong population inference."
+    },
+    "prefix/cue_minus_neutral/prefix_numerator_bits": {
+      "answer_weighted_mean": -0.8751130513918345,
+      "topic_means": {
+        "Animals": -1.4564371165178907,
+        "Chess Pieces": 0.6208055720764348,
+        "Flags": 0.2862993061818052,
+        "Game Boards": -1.2276400091053645,
+        "Logos": -0.46181609825964914,
+        "Optical Illusion": -1.9121350554867789,
+        "Patterned Grid": -1.9748679586313977
+      },
+      "topic_counts": {
+        "Animals": 30,
+        "Chess Pieces": 30,
+        "Flags": 30,
+        "Game Boards": 30,
+        "Logos": 30,
+        "Optical Illusion": 30,
+        "Patterned Grid": 30
+      },
+      "whole_topic_resampling_ci95": [
+        -1.5599856074456084,
+        -0.1424538859245421
+      ],
+      "enumerated_ordered_resamples": 823543,
+      "note": "Seven-topic sensitivity analysis; visual subset has only three topics and 27 resamples, not strong population inference."
+    },
+    "prefix/cue_minus_neutral/null_sequence_bits": {
+      "answer_weighted_mean": 27.711041051093734,
+      "topic_means": {
+        "Animals": 33.96191946556216,
+        "Chess Pieces": 36.377860383548295,
+        "Flags": 33.507745663233884,
+        "Game Boards": 23.807042686158255,
+        "Logos": 34.394567644136195,
+        "Optical Illusion": -1.897664824787474,
+        "Patterned Grid": 33.82581633980479
+      },
+      "topic_counts": {
+        "Animals": 30,
+        "Chess Pieces": 30,
+        "Flags": 30,
+        "Game Boards": 30,
+        "Logos": 30,
+        "Optical Illusion": 30,
+        "Patterned Grid": 30
+      },
+      "whole_topic_resampling_ci95": [
+        17.165749790791658,
+        34.64603812105698
+      ],
+      "enumerated_ordered_resamples": 823543,
+      "note": "Seven-topic sensitivity analysis; visual subset has only three topics and 27 resamples, not strong population inference."
+    },
+    "visual/counterfactual_minus_sham/vcd_level": {
+      "answer_weighted_mean": -0.1142035460363911,
+      "topic_means": {
+        "Flags": -0.24722443001223418,
+        "Game Boards": -0.24815665623848088,
+        "Patterned Grid": 1.3280153582601943
+      },
+      "topic_counts": {
+        "Flags": 24,
+        "Game Boards": 30,
+        "Patterned Grid": 5
+      },
+      "whole_topic_resampling_ci95": [
+        -0.24798352851074937,
+        0.6052582789351955
+      ],
+      "enumerated_ordered_resamples": 27,
+      "note": "Seven-topic sensitivity analysis; visual subset has only three topics and 27 resamples, not strong population inference."
+    },
+    "visual/counterfactual_minus_sham/vcd_increment": {
+      "answer_weighted_mean": -0.03378068070454324,
+      "topic_means": {
+        "Flags": -0.16770211733793383,
+        "Game Boards": 0.00028429878738632416,
+        "Patterned Grid": 0.4046523381841543
+      },
+      "topic_counts": {
+        "Flags": 24,
+        "Game Boards": 30,
+        "Patterned Grid": 5
+      },
+      "whole_topic_resampling_ci95": [
+        -0.13260491015969258,
+        0.20752291897822928
+      ],
+      "enumerated_ordered_resamples": 27,
+      "note": "Seven-topic sensitivity analysis; visual subset has only three topics and 27 resamples, not strong population inference."
+    },
+    "visual/counterfactual_minus_sham/full_content_logprob": {
+      "answer_weighted_mean": -5.203385311834109,
+      "topic_means": {
+        "Flags": -9.033886680476924,
+        "Game Boards": -3.039370181772392,
+        "Patterned Grid": 0.19893047728110105
+      },
+      "topic_counts": {
+        "Flags": 24,
+        "Game Boards": 30,
+        "Patterned Grid": 5
+      },
+      "whole_topic_resampling_ci95": [
+        -8.467723364199308,
+        -1.379741094007482
+      ],
+      "enumerated_ordered_resamples": 27,
+      "note": "Seven-topic sensitivity analysis; visual subset has only three topics and 27 resamples, not strong population inference."
+    }
+  },
+  "notes": [
+    "All scored paths (fixed and generated) included; no GPU inference.",
+    "Context and donor reuse, and seven topics, limit answer-iid uncertainty interpretation.",
+    "The 24-token-cap count is not by itself a non-EOS truncation count."
+  ]
+}
