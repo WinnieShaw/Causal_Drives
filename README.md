@@ -15,6 +15,8 @@ public release retained under `legacy/initial_release/` for provenance.
 - `analysis/`: CPU-side result analysis.
 - `data/derived/`: compact, text-free derived tables and summaries used for
   the reported plots and statistics.
+- `data/model_outputs/`: sanitized completed model runs, including generated
+  responses, token-level traces, and score records (gzip-compressed JSONL).
 - `figures/source/corrected_results/`: source for the corrected temporal,
   aligned-profile, and intervention-recovery figures.
 - `figures/pdf/`: PDF figures used in the manuscript source.
@@ -55,12 +57,11 @@ See `data/README.md` for upstream sources and download instructions.
 
 ## Data and scope
 
-The published derived tables contain sample-level scores or aggregate
-statistics only; they omit images, questions, generated answer text, references,
-and raw teacher-forced token traces. Those original materials are available
-from the dataset owners and remain subject to their terms. This repository
-therefore supports figure and summary inspection directly, while exact model
-reruns require separately obtaining the upstream data and checkpoints.
+The model-output package preserves generated responses and token-level scores
+while omitting upstream images, source questions, reference answers/facts, and
+local filesystem paths. Exact model reruns still require obtaining the
+upstream data and checkpoints separately. See `data/model_outputs/README.md`
+for the package format and sanitization details.
 
 The scripts and derived values are research artifacts, not a claim that every
 analysis is an independently validated predictor of answer correctness.

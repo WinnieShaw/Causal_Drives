@@ -1,9 +1,8 @@
 # Data provenance
 
-This repository does not redistribute upstream images, full questions,
-reference answers, generated answer text, or raw model-scoring traces. The
-tracked files under `derived/` contain compact score summaries and plot inputs
-with no answer text or image payloads.
+The repository does not redistribute upstream images, full questions, or
+reference-answer text. Compact analysis tables are under `derived/`; sanitized
+model-generated records and scoring traces are under [`model_outputs/`](model_outputs/README.md).
 
 ## MAVIS
 
@@ -12,8 +11,9 @@ and follow its dataset-card terms:
 
 - Project and setup: <https://github.com/seokwon99/MAVIS>
 - The upstream repository provides `python scripts/prepare_data.py --data_dir
-  data` to prepare its evaluation data. The 500-row subset and model outputs
-  used here are not included in this repository.
+  data` to prepare its evaluation data. The upstream benchmark inputs are not
+  included in this repository; the model-generated outputs are included in
+  sanitized form under `model_outputs/`.
 
 The experiment scripts accept the parquet/data path as an argument or
 environment variable; inspect each script's `--help` output before a run.
@@ -27,7 +27,8 @@ terms:
 - Project and data instructions: <https://github.com/anvo25/vlms-are-biased>
 - Dataset card: <https://huggingface.co/datasets/anvo25/vlms-are-biased>
 
-Images and prompt/answer records are not copied here.
+Images and source prompt/answer text are not copied here. Sanitized model
+outputs and scores are included under `model_outputs/`.
 
 ## Models
 
@@ -38,7 +39,7 @@ reproducing a run; model names alone do not pin an immutable checkpoint.
 
 ## Derived results
 
-`derived/` contains non-text sample summaries, confidence intervals, and
-curve tables. It is sufficient to regenerate the tracked corrected-result
-figures, but it is not a replacement for the original benchmark records or
-full teacher-forced traces.
+`derived/` contains compact sample summaries, confidence intervals, and curve
+tables. `model_outputs/` contains generated answers, token-level traces, and
+model scores with benchmark source text and images removed. Reproducing model
+inference still requires obtaining the upstream datasets and checkpoints.
